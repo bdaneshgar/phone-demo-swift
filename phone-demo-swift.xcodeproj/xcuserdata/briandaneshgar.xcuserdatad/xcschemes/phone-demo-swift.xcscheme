@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C613345C1E3927EE004EFBE9"
+               BuildableName = "phone-demo-swift.app"
+               BlueprintName = "phone-demo-swift"
+               ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C61334701E3927EE004EFBE9"
+               BuildableName = "phone-demo-swiftTests.xctest"
+               BlueprintName = "phone-demo-swiftTests"
+               ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C613347B1E3927EE004EFBE9"
+               BuildableName = "phone-demo-swiftUITests.xctest"
+               BlueprintName = "phone-demo-swiftUITests"
+               ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C613345C1E3927EE004EFBE9"
+            BuildableName = "phone-demo-swift.app"
+            BlueprintName = "phone-demo-swift"
+            ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C613345C1E3927EE004EFBE9"
+            BuildableName = "phone-demo-swift.app"
+            BlueprintName = "phone-demo-swift"
+            ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C613345C1E3927EE004EFBE9"
+            BuildableName = "phone-demo-swift.app"
+            BlueprintName = "phone-demo-swift"
+            ReferencedContainer = "container:phone-demo-swift.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

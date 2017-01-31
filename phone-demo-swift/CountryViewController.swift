@@ -8,17 +8,32 @@
 
 import UIKit
 
-class CountryViewController: UIViewController {
+class CountryViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    @IBOutlet var picker: UIPickerView!
+    
+    var pickerData: [String] = [String]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        //picker
+        self.picker.delegate = self
+        self.picker.dataSource = self
+        pickerData = ["India", "United States"]
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int{        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
     }
     
 
@@ -31,5 +46,10 @@ class CountryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func back(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
 
 }

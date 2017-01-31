@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "02569F71A26CC9F0687C63CBC20A19ACC96D6D1C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "02569F71A26CC9F0687C63CBC20A19ACC96D6D1C" : 9223372036854775807,
+    "FC1061805034856403CC375EEEF8877945C53224" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0ACB8693-5840-48F5-9CDA-44DB1A20D9A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "02569F71A26CC9F0687C63CBC20A19ACC96D6D1C" : "phone-demo-swift\/",
+    "FC1061805034856403CC375EEEF8877945C53224" : "phone-demo-swift\/PjSIP\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "phone-demo-swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "phone-demo-swift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bdaneshgar\/phone-demo-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02569F71A26CC9F0687C63CBC20A19ACC96D6D1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DXI-Ltd\/PjSIP",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC1061805034856403CC375EEEF8877945C53224"
+    }
+  ]
+}
