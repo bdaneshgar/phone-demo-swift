@@ -1,0 +1,3 @@
+[submodule "PjSIP"]
+	path = PjSIP
+	url = https://github.com/DXI-Ltd/PjSIP
