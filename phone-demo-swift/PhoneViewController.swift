@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import Contacts
+import ContactsUI
+
+protocol ContactDelegate {
+    func didFetchContacts(_ contacts: [CNContact])
+}
 
 
-class PhoneViewController: UIViewController {
+class PhoneViewController: UIViewController, CNContactPickerDelegate {
+
+    var delegate: ContactDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        testSIP()
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -30,9 +39,17 @@ class PhoneViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func showContacts(_ sender: Any) {
+        let contactPickerViewController = CNContactPickerViewController()
+        contactPickerViewController.delegate = self
+        present(contactPickerViewController, animated: true, completion: nil)
+    }
     
     func testSIP(){
-        pjsua_create();
+        
+        pjsua_destroy()
+        
+        pjsua_create()
         
         var configuration = pjsua_config()
         var log_cfg = pjsua_logging_config()
@@ -53,8 +70,18 @@ class PhoneViewController: UIViewController {
         pjsua_transport_create(PJSIP_TRANSPORT_UDP, &transportConfig, nil)
         pjsua_transport_create(PJSIP_TRANSPORT_TCP, &transportConfig, nil)
 
-        pjsua_start()
+        var status = pjsua_start()
+        
+        var acc_id = pjsua_acc_id()
+        var cfg = pjsua_acc_config()
 
+        pjsua_acc_config_default(&cfg)
+        cfg.id = pj_str(UnsafeMutablePointer(mutating: "roam_vzw1@66.241.96.221"))
+        cfg.reg_uri = pj_str(UnsafeMutablePointer(mutating: "66.241.96.221"))
+        
+        status = pjsua_acc_add(&cfg, pj_bool_t(PJ_TRUE.rawValue), &acc_id)
+
+        print("status: \(status)")
+        
     }
-
 }

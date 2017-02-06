@@ -90,9 +90,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BWWalkthrough/BWWalkthrough.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JCDialPad/JCDialPad.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/BWWalkthrough/BWWalkthrough.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/JCDialPad/JCDialPad.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/libPhoneNumber-iOS/libPhoneNumber_iOS.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

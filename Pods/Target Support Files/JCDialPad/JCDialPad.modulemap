@@ -1,0 +1,6 @@
+framework module JCDialPad {
+  umbrella header "JCDialPad-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,145 +7,250 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13F9D3E18E9A12EBC2D50A1798D75F04 /* BWWalkthrough-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B419C6A4956C553EEFABA26A588140 /* BWWalkthrough-dummy.m */; };
-		5FED474CF6C2CAD3D965EEC94840EFAD /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797B5917D00BA39442A00C44ECCF31E5 /* BWWalkthroughPageViewController.swift */; };
-		653E0C3BDA369E7724A7C384261B6693 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0853FD5E876AC745445D4E522BAF197 /* BWWalkthroughViewController.swift */; };
-		685748C5C218D405B391E8C0205B82CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6948793B84D7FD504DDB5A06DE411D82 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6D8BEBBEBC47D5BDA7F4E123000E85F3 /* Pods-phone-demo-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815DBD27339057F5F366E75F1E0C7F5 /* Pods-phone-demo-swift-dummy.m */; };
-		B49BFE711CC231F5EF1533CF5EA53848 /* BWWalkthrough-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 63E8F804A93DE243A8E7338F38FBCF39 /* BWWalkthrough-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4BA85894FFFB29FA8D8C6F2A7D0E27E /* Pods-phone-demo-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2230E1D4A69EE418838CF101048919B9 /* Pods-phone-demo-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A97539F7A49BE8C55D20E4A19E8803 /* NBMetadataCoreTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8D10E10440B686C9F356BB232C26D4 /* NBMetadataCoreTest.m */; };
+		0733D1359303EB0CD27419414523EAD7 /* JCPadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06491A157CE3798177FFD623AA6FD70E /* JCPadButton.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0751061D16CB4FF94117E3D9699BFC83 /* JCDialPad.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E1C5D1E27551AD227AC8A849E7FD109 /* JCDialPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F9D3E18E9A12EBC2D50A1798D75F04 /* BWWalkthrough-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4045BD2742392935203180A81194C0F4 /* BWWalkthrough-dummy.m */; };
+		14D0848DA6343501A7A6A5715F9DCE57 /* NBNumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C07269688B5558BAC81D8BE41F9460F /* NBNumberFormat.m */; };
+		17EAA065458CDF4AC55B34A4D70A2A1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */; };
+		19FB2F0D5D4EFCFC829E73D2164B76CC /* NBPhoneNumberDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F32167DDDBAFA49A8B1EA16AFE70EFD /* NBPhoneNumberDesc.m */; };
+		1C8E78937DA7D3D5AE88389E4C867EB1 /* JCDialPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C18771178B887C28D8F9772A944EFF40 /* JCDialPad.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		246F492EF9F428CE40A28B790B1395CC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA39AEEC3EF10974BCBB74BDA2DB221 /* CoreTelephony.framework */; };
+		25CE0A026553069D188D722E55AB556A /* NBMetadataCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF56A81DB1D4C22C97CCA6D08CB8A1E /* NBMetadataCore.m */; };
+		2CBB3CC70F1AC0ED5E98BB917EE41F33 /* UIView+FrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A0A7A6498CE3A5CB13C85ABBF15EAFBF /* UIView+FrameAccessor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A35D63B6EE7A1AE0BEC5E0F2EE820FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */; };
+		4D2E9694C843A1FEB2B1284685D8894D /* JCDialPad-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CBC9A7A1D07B8B162283F7AE3EF2F6 /* JCDialPad-dummy.m */; };
+		4E3D1DDD2EF47B4DCBE785AE8098AAC6 /* NBAsYouTypeFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AB42EDCCE58B0296939A853C8780A84 /* NBAsYouTypeFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FE4C255B9BDAFE8A5602354E0937999 /* JCDialPad-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F0B3FA0570285798FA3853F0E6566D1 /* JCDialPad-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FED474CF6C2CAD3D965EEC94840EFAD /* BWWalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA312A6637A841D7E9F0C5A78534DAE5 /* BWWalkthroughPageViewController.swift */; };
+		63DE3C731F4DBBEB8356663ACF9B047F /* NBMetadataCore.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B4E9DE92CA853E8785B901D203AF18 /* NBMetadataCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		653E0C3BDA369E7724A7C384261B6693 /* BWWalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DE484CAAF9CC5348F383AA14572FDB /* BWWalkthroughViewController.swift */; };
+		685748C5C218D405B391E8C0205B82CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */; };
+		6DE901AB7DCB046C76453DBAC6661F44 /* NBPhoneNumberUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 09E8F66FD67ABE9FA56024A89B0B84F6 /* NBPhoneNumberUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8221A54B2A83BCA311FBC000334A7D8A /* UIView+FrameAccessor.h in Headers */ = {isa = PBXBuildFile; fileRef = B3B07A9D8CED9E8ACA91E2BF053AF423 /* UIView+FrameAccessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83D4707CFAB49D65BDEBEFA92C2DC8AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */; };
+		8CC38DEE112D2CA2A36FE0D59BEB797E /* libPhoneNumber_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3315CBF60FEE8263EE8E5334F4C54953 /* libPhoneNumber_iOS.framework */; };
+		8DF2202157042C8E084599F2B2D7A639 /* NBMetadataCoreTestMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C32833469AA2541C6FDA0298D2C9CB83 /* NBMetadataCoreTestMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91362C6708A514418EB87C9927B8409E /* NBPhoneMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF590957C34FB8C9614A0B40EE3C2BF /* NBPhoneMetaData.m */; };
+		935FF1F77DB9962E63C0650264D45761 /* NBMetadataCoreMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 988DC3A22031B4C9A2ACCFAD6B2A61C5 /* NBMetadataCoreMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		995CE3CEBDDD984DF010D540EA6A5F6B /* NBAsYouTypeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA6C324F04F3642F7E17A70F9A25C05 /* NBAsYouTypeFormatter.m */; };
+		9CCFBFDA244D0F7EA43D6F1628F783A6 /* NBMetadataCoreTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F9FD5D962D651701C230EC5A7C6EAC1 /* NBMetadataCoreTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DDE649E8DC7B33B71ABBE8B48FE7804 /* Pods-phone-demo-swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2230E1D4A69EE418838CF101048919B9 /* Pods-phone-demo-swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A07777F6DCB0558B1912BA59DD703C01 /* NBPhoneNumberDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 883C742F678C5480CF1DA5DF040C82BC /* NBPhoneNumberDefines.m */; };
+		A3291006AC10F0E7F72AA0F94AF05D9A /* NBMetadataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4733C9923D18FCD42B7973A5ACA38053 /* NBMetadataHelper.m */; };
+		B49BFE711CC231F5EF1533CF5EA53848 /* BWWalkthrough-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 372FAA23CF86C8E694519183715EA57A /* BWWalkthrough-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B59BCD418C99DE90F2EF194502043EEF /* NBPhoneNumberDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = F9D01CB8A2E74BC853CC12DAB8D7ACDF /* NBPhoneNumberDesc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD30D411ACA30260AD6BE3AECB743DFA /* NBMetadataCoreMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 163599C6F385994F201A8F75C9F175B1 /* NBMetadataCoreMapper.m */; };
+		C0EF466B459802A6357DAB043C4639EC /* NBPhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5301C75867E93DC411EA71BE45A061 /* NBPhoneNumber.m */; };
+		D05E8F40D8CD2F4FACECB49A1AA652C1 /* NBPhoneMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 36AB7E8F90F90E0F420A1F39C22B07E1 /* NBPhoneMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5F48404A04D735E76F2917662362AD2 /* NBPhoneNumberDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 642DE4ED67F69F0687CDECB4B54429AD /* NBPhoneNumberDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D815AD3E80DA9C86BA662CBDC03E395B /* NBPhoneNumberUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BC6718132BBD9BB330C09724DAE872 /* NBPhoneNumberUtil.m */; };
+		DDC62B1373C35417D76A1120A4BFCE35 /* JCPadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A68C185B2BEC5D7884E76AA01B5DBEA /* JCPadButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE456580195EE641D008838840EF15BF /* Pods-phone-demo-swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4815DBD27339057F5F366E75F1E0C7F5 /* Pods-phone-demo-swift-dummy.m */; };
+		E302C8B97300AD55531E8BD7DF5C7758 /* NBNumberFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F0BEB321934D8EECB5B70D16DFCBD12 /* NBNumberFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E54A9C3FE63589340A0EE2597D19CCA9 /* NBMetadataCoreTestMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED267F95879131DFBF9A68FE3035698 /* NBMetadataCoreTestMapper.m */; };
+		E86FF765BDC2514A14568ABC5F2CBB2A /* NBPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A0865FDEA7DC96C11AEE82E39F351C38 /* NBPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93584283E28A37067E4772623B65517 /* libPhoneNumber-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB270E5EF96131050E0D3879E7BC3B8 /* libPhoneNumber-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB7E168F2046A08ED9BCF7E11D24689A /* libPhoneNumber-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7D7A09BBA064DCEDCE996D64F1B851 /* libPhoneNumber-iOS-dummy.m */; };
+		F202D25618D1A87026B0B977C9516957 /* NBMetadataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E5CCE9270E954298638F1E67D8DAA36 /* NBMetadataHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3772216DF7745056F97BFB0F24310EBB /* PBXContainerItemProxy */ = {
+		0DECF11DB22DB28955FEC94B44777F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF539237882C886DCFB8D95ECF8490F3;
+			remoteInfo = "libPhoneNumber-iOS";
+		};
+		7DF60CAA95B7B1677A95BCBEE087D8D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9889562781163BF5CB84E06A985BCE44;
 			remoteInfo = BWWalkthrough;
 		};
+		D78D8F147CA8B46437C58612BA4F143E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88C2523B69DE1AD6D791628BE542D9C4;
+			remoteInfo = JCDialPad;
+		};
+		F51971AF81CF3F4B159BE29F0D1929DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF539237882C886DCFB8D95ECF8490F3;
+			remoteInfo = "libPhoneNumber-iOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		011D80F511FCBE191BF2DACFDF5FE652 /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libsrtp-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		02227870431466AD6FDA7248A1251455 /* Pods-phone-demo-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-demo-swift.release.xcconfig"; sourceTree = "<group>"; };
-		0259A3C82DB68893C924DCF82B1B4AEE /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjlib-util-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		039FF8C6565AF32EA062E8E7FD6C88EE /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
-		0598E2AE01679FC34099C54D0FBAA5B3 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
-		09B419C6A4956C553EEFABA26A588140 /* BWWalkthrough-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BWWalkthrough-dummy.m"; sourceTree = "<group>"; };
-		09E4A2292C9C83032A2BAB5D1A36D4A1 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
-		0A29F7E86DCCC7FB01F84E9E90CEA6DE /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		04F5F6562086A079E967516FDC3A4509 /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
+		06491A157CE3798177FFD623AA6FD70E /* JCPadButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCPadButton.m; path = JCDialPad/JCPadButton.m; sourceTree = "<group>"; };
+		06B8A3B49B5796C671E89759635448C5 /* asn1t.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1t.h; path = "include-ios/openssl/asn1t.h"; sourceTree = "<group>"; };
+		09E8F66FD67ABE9FA56024A89B0B84F6 /* NBPhoneNumberUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberUtil.h; path = libPhoneNumber/NBPhoneNumberUtil.h; sourceTree = "<group>"; };
+		0B551B3983C7339042660484A48E56DB /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
 		0CA5F93F1526B04005A01CB5E81C1647 /* Pods-phone-demo-swift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-demo-swift-frameworks.sh"; sourceTree = "<group>"; };
-		0D57A43C19CDC424BD50944DCC770B09 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
-		0DCE5DA249B9143C902ED52286D3059E /* libpjsdp-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsdp-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsdp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		17E16E35BDD7316E748F916490B0F982 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		18C530FD43445C8967088647171A751D /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
-		19365FBF1A59CE7DA752DFF0A0205902 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
-		1A05B1F0E6C98CFB90AFD205963A6717 /* symhacks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = symhacks.h; path = "include-ios/openssl/symhacks.h"; sourceTree = "<group>"; };
-		1C7772F26AE2EBAAE3A8BABF6533EE7D /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
-		1FCD36B966026E20B97483E473408ADA /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		0DE2F3E9802A3A6AF947847DAF71C203 /* buffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = "include-ios/openssl/buffer.h"; sourceTree = "<group>"; };
+		0E1C5D1E27551AD227AC8A849E7FD109 /* JCDialPad.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCDialPad.h; path = JCDialPad/JCDialPad.h; sourceTree = "<group>"; };
+		0E9C281E1D84B4379D5218650D972A7B /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
+		0EA1FF4E7A5E221C8E33C1AF0D8AD65A /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
+		113E662FA87DDBE3791C5CD060DE0C6A /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
+		163599C6F385994F201A8F75C9F175B1 /* NBMetadataCoreMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreMapper.m; path = libPhoneNumber/NBMetadataCoreMapper.m; sourceTree = "<group>"; };
+		16705A762BC5CAAD3E98316F7CF14E52 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
+		1874A3B5FB3CB7F4006FE3808B535DA0 /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
+		1A644EA9DAC9A767FEDF0351F2EDAF6F /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libspeex-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		1AF42CF3AF9DD437D6461B3BA187819F /* BWWalkthrough.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BWWalkthrough.modulemap; sourceTree = "<group>"; };
+		1B24403839A256F10499B57C66619F82 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
+		1B39D8672F47A5A7471DFD3BB0C70C44 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
+		1B9E430952B7D8E47C58EDC94D769C47 /* BWWalkthrough-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-prefix.pch"; sourceTree = "<group>"; };
+		1D5301C75867E93DC411EA71BE45A061 /* NBPhoneNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumber.m; path = libPhoneNumber/NBPhoneNumber.m; sourceTree = "<group>"; };
+		1F9FD5D962D651701C230EC5A7C6EAC1 /* NBMetadataCoreTest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTest.h; path = libPhoneNumber/NBMetadataCoreTest.h; sourceTree = "<group>"; };
+		20AD6B286F212437437C8CB585577293 /* libPhoneNumber-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-prefix.pch"; sourceTree = "<group>"; };
+		21C8F12B7A8A4C2F201F9EA63718A455 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
 		2230E1D4A69EE418838CF101048919B9 /* Pods-phone-demo-swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-phone-demo-swift-umbrella.h"; sourceTree = "<group>"; };
-		25079C1D6314B5BBD6A73275AA0B5524 /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
-		282E97CBDA49D01AEF5D265FEBC0BF38 /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		28B4AF94CFF863FE556F2FCAC20EE7AC /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
-		28FD7E726AECC8D974BAA6396996055F /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
-		3470F7992550C18CD26AF821088B5AE7 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
-		348F7D1D25C890CDC6F5B31A3C86BBA8 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
-		3CB9B236469F3B9B8FA452B26000685F /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
-		3CFF3719B7C0B7A7AEC620F2B6F449FD /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjnath-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		3DE2453A20773218E42F93B6FD3020D3 /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-codec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		3F4C0605D0557484960C5FC0590D80A7 /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libgsmcodec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		45AEF3B3110C80F1BBFE53C5E2E4A965 /* obj_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = obj_mac.h; path = "include-ios/openssl/obj_mac.h"; sourceTree = "<group>"; };
-		45DB99C73D9CA9E013E1A3D6C5BCB286 /* libsrtp-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libsrtp-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libsrtp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		45F40130D79448B519C94DE42F01988E /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		2CE515A93CDEC42486B7CA03732942F9 /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		2DF590957C34FB8C9614A0B40EE3C2BF /* NBPhoneMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneMetaData.m; path = libPhoneNumber/NBPhoneMetaData.m; sourceTree = "<group>"; };
+		2ED267F95879131DFBF9A68FE3035698 /* NBMetadataCoreTestMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTestMapper.m; path = libPhoneNumber/NBMetadataCoreTestMapper.m; sourceTree = "<group>"; };
+		2F8D10E10440B686C9F356BB232C26D4 /* NBMetadataCoreTest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCoreTest.m; path = libPhoneNumber/NBMetadataCoreTest.m; sourceTree = "<group>"; };
+		3315CBF60FEE8263EE8E5334F4C54953 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libPhoneNumber_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351495F089E84106240E0453F826320E /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-videodev-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		3554D5164DF5F7BE6B92034C761407C1 /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		36AB7E8F90F90E0F420A1F39C22B07E1 /* NBPhoneMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneMetaData.h; path = libPhoneNumber/NBPhoneMetaData.h; sourceTree = "<group>"; };
+		372FAA23CF86C8E694519183715EA57A /* BWWalkthrough-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-umbrella.h"; sourceTree = "<group>"; };
+		3B851662AEDA13E10C3DD2F2198F36CC /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
+		3C07269688B5558BAC81D8BE41F9460F /* NBNumberFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBNumberFormat.m; path = libPhoneNumber/NBNumberFormat.m; sourceTree = "<group>"; };
+		3EE9461FD3119D1C1D80BD2AD0972EF9 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
+		3F32167DDDBAFA49A8B1EA16AFE70EFD /* NBPhoneNumberDesc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberDesc.m; path = libPhoneNumber/NBPhoneNumberDesc.m; sourceTree = "<group>"; };
+		4045BD2742392935203180A81194C0F4 /* BWWalkthrough-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BWWalkthrough-dummy.m"; sourceTree = "<group>"; };
+		427D48A0B6DD62B7754B11B8785C17A8 /* dso.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dso.h; path = "include-ios/openssl/dso.h"; sourceTree = "<group>"; };
+		44ADB8B7A74A90BFFCE41114A72DA498 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		45B909348A0C53C738C3BC619657B9F9 /* srtp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srtp.h; path = "include-ios/openssl/srtp.h"; sourceTree = "<group>"; };
+		4733C9923D18FCD42B7973A5ACA38053 /* NBMetadataHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataHelper.m; path = libPhoneNumber/NBMetadataHelper.m; sourceTree = "<group>"; };
+		478932B871D165E19F48FAD0D5EB8F8D /* JCDialPad.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JCDialPad.xcconfig; sourceTree = "<group>"; };
 		4815DBD27339057F5F366E75F1E0C7F5 /* Pods-phone-demo-swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phone-demo-swift-dummy.m"; sourceTree = "<group>"; };
-		4A0453E880C3D5084F1443AB2B9BB3EF /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
-		4B61BCD959C29B7DAFCB0D09FF60D361 /* whrlpool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = whrlpool.h; path = "include-ios/openssl/whrlpool.h"; sourceTree = "<group>"; };
-		4EA75749CD937418A75D109D1C8C43E5 /* Pods_phone_demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_phone_demo_swift.framework; path = "Pods-phone-demo-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52747443732C594D2583D8CB52651E5C /* libpjmedia-videodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-videodev-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-videodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		5315D96A09D9AA3452F7F0F41E4C1210 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
-		5D01FAFFA2D3E796AC472CD7E546714A /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
-		6388A22E8017FB3B44FBF1ECDE604E1E /* libspeex-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libspeex-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libspeex-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		63E8F804A93DE243A8E7338F38FBCF39 /* BWWalkthrough-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-umbrella.h"; sourceTree = "<group>"; };
-		6C3E868FAB35D99E2470BAAC5CDCB1C5 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
-		6DEEE32D961AE551D75E682E0408912F /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
-		6E3E7FFF9465EE395E16C24093153010 /* libpjsua2-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsua2-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsua2-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		70823298F4A4DD0F591AB756F201CDCE /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
-		70D569C416BCA4D37EF2B6BEF626FA23 /* BWWalkthrough.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BWWalkthrough.modulemap; sourceTree = "<group>"; };
-		74F9CE58C0E63211DAAB32BC04FFF322 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
-		788659318DED47138CD01E7ABAD3AC4B /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
-		797B5917D00BA39442A00C44ECCF31E5 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = BWWalkthrough/BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
-		81DCF2B7479C29FB3AD77F95719A229E /* cms.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cms.h; path = "include-ios/openssl/cms.h"; sourceTree = "<group>"; };
+		4921D2E204CA1ED7BD65C01AB9EFE959 /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdh.h; path = "include-ios/openssl/ecdh.h"; sourceTree = "<group>"; };
+		4BE425B3B42255C6A0E29A8A60DB111B /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-ua-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		4D1915C36C2CD09760F4F5F56C893A04 /* ssl2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl2.h; path = "include-ios/openssl/ssl2.h"; sourceTree = "<group>"; };
+		4E5CCE9270E954298638F1E67D8DAA36 /* NBMetadataHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataHelper.h; path = libPhoneNumber/NBMetadataHelper.h; sourceTree = "<group>"; };
+		581F06E8B6C35D53A39EECECE93B489A /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsua-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		58BC209E8F17D18DCDB51A53EBA271AE /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
+		5BF56A81DB1D4C22C97CCA6D08CB8A1E /* NBMetadataCore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBMetadataCore.m; path = libPhoneNumber/NBMetadataCore.m; sourceTree = "<group>"; };
+		5EA6C324F04F3642F7E17A70F9A25C05 /* NBAsYouTypeFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBAsYouTypeFormatter.m; path = libPhoneNumber/NBAsYouTypeFormatter.m; sourceTree = "<group>"; };
+		5F0BEB321934D8EECB5B70D16DFCBD12 /* NBNumberFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBNumberFormat.h; path = libPhoneNumber/NBNumberFormat.h; sourceTree = "<group>"; };
+		5FB61D0A5B7B83394A8CBBD18DA890C3 /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
+		63C891AA3EC5CF1428E64E507CD922F5 /* libgsmcodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libgsmcodec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libgsmcodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		642DE4ED67F69F0687CDECB4B54429AD /* NBPhoneNumberDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDefines.h; path = libPhoneNumber/NBPhoneNumberDefines.h; sourceTree = "<group>"; };
+		661495A5168A124C7ED65F8629146438 /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-simple-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		6796DD3B2E9B4B14284E83ACC7E78F71 /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
+		67E6D03E006365FFD33A71C9138A6925 /* libpjsdp-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsdp-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsdp-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		687F79B6A7C9739207497AEC350ED533 /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
+		68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6A68C185B2BEC5D7884E76AA01B5DBEA /* JCPadButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JCPadButton.h; path = JCDialPad/JCPadButton.h; sourceTree = "<group>"; };
+		6AB42EDCCE58B0296939A853C8780A84 /* NBAsYouTypeFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBAsYouTypeFormatter.h; path = libPhoneNumber/NBAsYouTypeFormatter.h; sourceTree = "<group>"; };
+		6C9C2930974875958066F76F95149622 /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libilbccodec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		6CB27FD4875B51AE6D5DF390B7C6D528 /* comp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = comp.h; path = "include-ios/openssl/comp.h"; sourceTree = "<group>"; };
+		6F6583CD1009753619AD7CC84F628FD2 /* libpjnath-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjnath-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjnath-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		7039725C82E9A9ED1BD78E19D414417D /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		718E3F977DF5071B88E0893AA6CE0CF5 /* libPhoneNumber-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "libPhoneNumber-iOS.xcconfig"; sourceTree = "<group>"; };
+		71A805E77276E4C9940FB17F634400F0 /* JCDialPad.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JCDialPad.modulemap; sourceTree = "<group>"; };
+		72F6BB81AA8898985E9D778A6F34B201 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = "include-ios/openssl/md5.h"; sourceTree = "<group>"; };
+		74CBC9A7A1D07B8B162283F7AE3EF2F6 /* JCDialPad-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCDialPad-dummy.m"; sourceTree = "<group>"; };
+		7616AAE9A113124F09512366EBB9ECB4 /* rc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc4.h; path = "include-ios/openssl/rc4.h"; sourceTree = "<group>"; };
+		7618475C1A01B298578C14864CE8DA8C /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
+		78BC6718132BBD9BB330C09724DAE872 /* NBPhoneNumberUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberUtil.m; path = libPhoneNumber/NBPhoneNumberUtil.m; sourceTree = "<group>"; };
+		7ABBC62270D1136AF48E46368D5B2EA1 /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libresample-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		813CB6A8A029D1669A4A723A3505F71A /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
 		835DEDC91871E0E53FD1DE90ACB5633B /* Pods-phone-demo-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-demo-swift.debug.xcconfig"; sourceTree = "<group>"; };
-		87A7B05C50181D2682B969FBFF095ED7 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
-		89745F090EBA7E16770634D9B855117D /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
-		8BCFB5F2E357127E01D8126DDB2D558B /* libpjmedia-audiodev-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-audiodev-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-audiodev-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		8CECD759306A7B166A57637DE717F7AF /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
-		8E7CABE8AFAE3F9151229F2576679D69 /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
-		8EE64DF7BC213534FA64699CD15CB050 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
-		91BF8A823FC515F250BCEA164E2A0B46 /* BWWalkthrough.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BWWalkthrough.xcconfig; sourceTree = "<group>"; };
-		924911D8390733463A0F2CAA1ECB15F2 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
+		83EF8C3C3A4E7B4A9D22CA9F912636F5 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
+		883C742F678C5480CF1DA5DF040C82BC /* NBPhoneNumberDefines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBPhoneNumberDefines.m; path = libPhoneNumber/NBPhoneNumberDefines.m; sourceTree = "<group>"; };
+		8EB270E5EF96131050E0D3879E7BC3B8 /* libPhoneNumber-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libPhoneNumber-iOS-umbrella.h"; sourceTree = "<group>"; };
+		8F8E5C9A26B9F346F6292FEDFF2D93EA /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9685F26C4F8AC07A1E482E860B5E3BA8 /* ui_compat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui_compat.h; path = "include-ios/openssl/ui_compat.h"; sourceTree = "<group>"; };
-		971A5F2A4E678F4F80CDBC9BC257534F /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
-		973C38F7865D96AF4DAA135355741DC3 /* libpjsip-simple-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-simple-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-simple-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		974626ABB2B6D52BB4F5E9536C93BA27 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1.h; path = "include-ios/openssl/asn1.h"; sourceTree = "<group>"; };
+		941616E98F32C2EC9372CEEA28184527 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
+		9471C3D74A31590C54BF75485038E28B /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
+		9642A0FA405C9AB2F76E5AF5FD388E7B /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = blowfish.h; path = "include-ios/openssl/blowfish.h"; sourceTree = "<group>"; };
+		9693A5AABF1B95AA0EEA6EA5F486C180 /* Pods_phone_demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_phone_demo_swift.framework; path = "Pods-phone-demo-swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97476AE18CF617222DC3E33532EBBA0F /* Pods-phone-demo-swift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phone-demo-swift-acknowledgements.plist"; sourceTree = "<group>"; };
-		97E898361A7E508AAC65F1CE138FEB58 /* safestack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = safestack.h; path = "include-ios/openssl/safestack.h"; sourceTree = "<group>"; };
-		99AFB0B36417BBD146F8D7A0521C26A0 /* err.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = err.h; path = "include-ios/openssl/err.h"; sourceTree = "<group>"; };
-		9CE7AD9C80D8F565740F4AF83D351A1E /* BWWalkthrough.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BWWalkthrough.framework; path = BWWalkthrough.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A055A3818739AF2F9DE2A6D88725C1DA /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
-		A0BD3F2A69B109BECEA6F5A7D07A1273 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
-		A1A195E06FA2846AAC2B8676754BF9AB /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		97564C48B9ABCEFBDD2A4FF8A3435D7F /* pkcs7.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs7.h; path = "include-ios/openssl/pkcs7.h"; sourceTree = "<group>"; };
+		981AFB7F65948FF69E08CDB43D155909 /* rc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rc2.h; path = "include-ios/openssl/rc2.h"; sourceTree = "<group>"; };
+		987D8AF3CB6488E2225676FC8563AE7E /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509.h; path = "include-ios/openssl/x509.h"; sourceTree = "<group>"; };
+		988DC3A22031B4C9A2ACCFAD6B2A61C5 /* NBMetadataCoreMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreMapper.h; path = libPhoneNumber/NBMetadataCoreMapper.h; sourceTree = "<group>"; };
+		9A5C5BA0138CC4C97A843EA32A7F7513 /* BWWalkthrough.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BWWalkthrough.framework; path = BWWalkthrough.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C8AD9A5C6AF6D43508CDAFE3B8B6CA1 /* libpjmedia-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		9EA39AEEC3EF10974BCBB74BDA2DB221 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		9F0B3FA0570285798FA3853F0E6566D1 /* JCDialPad-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCDialPad-umbrella.h"; sourceTree = "<group>"; };
+		9F671066BF60482EF3F4B8F472A6DC71 /* BWWalkthrough.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BWWalkthrough.xcconfig; sourceTree = "<group>"; };
+		A0865FDEA7DC96C11AEE82E39F351C38 /* NBPhoneNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumber.h; path = libPhoneNumber/NBPhoneNumber.h; sourceTree = "<group>"; };
+		A0A7A6498CE3A5CB13C85ABBF15EAFBF /* UIView+FrameAccessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FrameAccessor.m"; path = "JCDialPad/UIView+FrameAccessor.m"; sourceTree = "<group>"; };
+		A0B4E9DE92CA853E8785B901D203AF18 /* NBMetadataCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCore.h; path = libPhoneNumber/NBMetadataCore.h; sourceTree = "<group>"; };
 		A1A5E4207DD723184CCEE4A684B3EBC7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5B8E6DB6EBA7D3B03DED728F75F55F6 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
-		A5BC923BDCB63A56E2FB2862ED95C5BF /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
-		A6D404555AC2A24812009D2D76CE768B /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
-		A947F4F5ACD5369E14475DF8EAE6B344 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
-		AB36FF51BF1DA19B542E02341744740F /* bn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bn.h; path = "include-ios/openssl/bn.h"; sourceTree = "<group>"; };
-		ABFB14BDE60825869CD136AA8023207E /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
-		B0853FD5E876AC745445D4E522BAF197 /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = BWWalkthrough/BWWalkthroughViewController.swift; sourceTree = "<group>"; };
-		B137B4B29D50699F727B027C9197F8DC /* srp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = srp.h; path = "include-ios/openssl/srp.h"; sourceTree = "<group>"; };
-		B512E4ACE75A87762A8E473DF6B1C784 /* e_os2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = e_os2.h; path = "include-ios/openssl/e_os2.h"; sourceTree = "<group>"; };
-		B7319AB1EDF6A0B93D03D1FF6CFA3AF3 /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpj-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		BA0CC3D21F693EB7455248EF534583EF /* libilbccodec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libilbccodec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libilbccodec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		A1F5D1BC7FBF770F3B88B4AC7D6A8D59 /* x509v3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509v3.h; path = "include-ios/openssl/x509v3.h"; sourceTree = "<group>"; };
+		A3AF8F242CD92AFEE284BBCFE8E827A6 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cmac.h; path = "include-ios/openssl/cmac.h"; sourceTree = "<group>"; };
+		A5C22E9C083E2B0C5F9C17B714271B4B /* kssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kssl.h; path = "include-ios/openssl/kssl.h"; sourceTree = "<group>"; };
+		A7EA5EBB0AC63EEDAA70E8132C1768B0 /* ec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ec.h; path = "include-ios/openssl/ec.h"; sourceTree = "<group>"; };
+		A80431DCC434A362B33756CE9629E7E4 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ecdsa.h; path = "include-ios/openssl/ecdsa.h"; sourceTree = "<group>"; };
+		A8A096146E6B8F80F7F4D667D16CAF31 /* krb5_asn.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = krb5_asn.h; path = "include-ios/openssl/krb5_asn.h"; sourceTree = "<group>"; };
+		AA567046B767D027F953D5B0CC1E56BA /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
+		AA6C0A1099A7100050F48E87D2620EE2 /* dtls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dtls1.h; path = "include-ios/openssl/dtls1.h"; sourceTree = "<group>"; };
+		AAF5CB999AD3322367009A0734CFE7DB /* txt_db.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = txt_db.h; path = "include-ios/openssl/txt_db.h"; sourceTree = "<group>"; };
+		AB145EC26D91E45B90B8FEAB4ABC9840 /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = camellia.h; path = "include-ios/openssl/camellia.h"; sourceTree = "<group>"; };
+		B3B07A9D8CED9E8ACA91E2BF053AF423 /* UIView+FrameAccessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FrameAccessor.h"; path = "JCDialPad/UIView+FrameAccessor.h"; sourceTree = "<group>"; };
+		B62074A42D514C3BFF09AF7227DAB843 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		B7CC79DB1F9F2EB664C5A7E72DCDFE77 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
+		B7D03907FCC659326C6E3A409E020346 /* des_old.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des_old.h; path = "include-ios/openssl/des_old.h"; sourceTree = "<group>"; };
+		B8C62B40E334CFD9FCD36FF5D5BA34C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B997EE55AB69FC3F4ECF1FC613F9DB61 /* mdc2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mdc2.h; path = "include-ios/openssl/mdc2.h"; sourceTree = "<group>"; };
 		BA7CCED87FB8FDF6B8D965EA78AA09F5 /* Pods-phone-demo-swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-phone-demo-swift.modulemap"; sourceTree = "<group>"; };
-		BA89C7CBDD8C93042DFB32446C755E7B /* opensslv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslv.h; path = "include-ios/openssl/opensslv.h"; sourceTree = "<group>"; };
-		BB1D96C9A1EEA3EBBC180F18AB342359 /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
-		BB7E99FF41F945864CA7A1078F325D30 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
-		BBE4789FB9E75AD781546EC4B00E3FDD /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = des.h; path = "include-ios/openssl/des.h"; sourceTree = "<group>"; };
-		BE571ACD3939CD4F1BF78B1F7B066326 /* evp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = evp.h; path = "include-ios/openssl/evp.h"; sourceTree = "<group>"; };
-		BE889A0D85EC82F203EFD26239A79093 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
-		C030DF6C77310E3E9BB17541633396BC /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libg7221codec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		C1CF481E03A45011DECB3168D9353866 /* ssl3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl3.h; path = "include-ios/openssl/ssl3.h"; sourceTree = "<group>"; };
-		C27DCF44C022A530AE59169F1F2031E5 /* ssl23.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl23.h; path = "include-ios/openssl/ssl23.h"; sourceTree = "<group>"; };
+		BDC179DA1FFD4BCF9DF0A86FC03D3138 /* crypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypto.h; path = "include-ios/openssl/crypto.h"; sourceTree = "<group>"; };
+		C11A89D669FD1ABAD95B335920549F96 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
+		C18771178B887C28D8F9772A944EFF40 /* JCDialPad.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JCDialPad.m; path = JCDialPad/JCDialPad.m; sourceTree = "<group>"; };
 		C2D3106C3158BAF390832574CC9C48D2 /* Pods-phone-demo-swift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-demo-swift-resources.sh"; sourceTree = "<group>"; };
-		C55FE657B5283FD5D75EF2B8B0176B1F /* libssl.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libssl.a; path = "lib-ios/libssl.a"; sourceTree = "<group>"; };
-		C6916F270B7296674222228C28C92B91 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
-		C6A0FBB259368E7E6FE920A787389CDE /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
-		C787FC8891782C45D4340CDB2C3E3587 /* pem2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem2.h; path = "include-ios/openssl/pem2.h"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CC907F6D4840D0540DB2CBCCBEC030E0 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = "include-ios/openssl/aes.h"; sourceTree = "<group>"; };
-		CED79AF0B21FB59BAEA64C777E7A5106 /* sha.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha.h; path = "include-ios/openssl/sha.h"; sourceTree = "<group>"; };
-		D203BBD6F21CCBF01C3C1066D8FF423F /* pqueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pqueue.h; path = "include-ios/openssl/pqueue.h"; sourceTree = "<group>"; };
-		DE01103444B5EC0898644E4EE5478C90 /* stack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stack.h; path = "include-ios/openssl/stack.h"; sourceTree = "<group>"; };
-		DE3D20A5F59F8AAAB32EAB332A175D4B /* objects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objects.h; path = "include-ios/openssl/objects.h"; sourceTree = "<group>"; };
+		C32833469AA2541C6FDA0298D2C9CB83 /* NBMetadataCoreTestMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBMetadataCoreTestMapper.h; path = libPhoneNumber/NBMetadataCoreTestMapper.h; sourceTree = "<group>"; };
+		C355A6A75375FA38A2D98D95EB25721B /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
+		C39548811E763DB7D4381A611C0A091E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C59B25AAC217CC6B26D4DF9DCEEED0F8 /* tls1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tls1.h; path = "include-ios/openssl/tls1.h"; sourceTree = "<group>"; };
+		C8F57BB19FDA63D4FC10052E21DC3408 /* lhash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lhash.h; path = "include-ios/openssl/lhash.h"; sourceTree = "<group>"; };
+		CA312A6637A841D7E9F0C5A78534DAE5 /* BWWalkthroughPageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughPageViewController.swift; path = BWWalkthrough/BWWalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		CA7D7A09BBA064DCEDCE996D64F1B851 /* libPhoneNumber-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libPhoneNumber-iOS-dummy.m"; sourceTree = "<group>"; };
+		CA8DDCF81A25B9E4B84D5F40BDC5D1F7 /* JCDialPad-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCDialPad-prefix.pch"; sourceTree = "<group>"; };
+		CDC66CD3A0D5CC4EE73AB619C6E5E2E6 /* libpjlib-util-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjlib-util-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjlib-util-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		CDDB503D68F52D566FD76269873ACC35 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl.h; path = "include-ios/openssl/ssl.h"; sourceTree = "<group>"; };
+		D1BF973ACF43FEE370A5B2ACA40116E8 /* ebcdic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ebcdic.h; path = "include-ios/openssl/ebcdic.h"; sourceTree = "<group>"; };
+		D250DE3CCABF8DFE93E99ABDA6F00C3A /* libPhoneNumber-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "libPhoneNumber-iOS.modulemap"; sourceTree = "<group>"; };
+		D376856E495F7B919646443089F9ACE2 /* JCDialPad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JCDialPad.framework; path = JCDialPad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EB0B67493458A0C1C366292451B771 /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pem.h; path = "include-ios/openssl/pem.h"; sourceTree = "<group>"; };
+		D9C2F00520A12A684A572CED08111A06 /* conf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf.h; path = "include-ios/openssl/conf.h"; sourceTree = "<group>"; };
+		DA511CA245A903BEF0AE8F329E7BE9C1 /* libcrypto.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcrypto.a; path = "lib-ios/libcrypto.a"; sourceTree = "<group>"; };
+		DD10F6E34A1E9BAB8CB246B15CEF4DAF /* libpj-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpj-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpj-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		DDAF2C9600AAFE66D73E104463DFF9D7 /* dsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dsa.h; path = "include-ios/openssl/dsa.h"; sourceTree = "<group>"; };
+		DF15E811077B4560A0595EA875BB4BFE /* libg7221codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libg7221codec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libg7221codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
 		DF266B2D25B01EFF6067037C36EC4AE5 /* Pods-phone-demo-swift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phone-demo-swift-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DFFF0095AD45762909C5F31E30B30BCD /* libresample-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libresample-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libresample-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		E82B0552D8F8EE7530C882B08CBAA824 /* opensslconf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = "include-ios/openssl/opensslconf.h"; sourceTree = "<group>"; };
-		E8D44C0E16D267A9646D4BC6E1FB164B /* asn1_mac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = asn1_mac.h; path = "include-ios/openssl/asn1_mac.h"; sourceTree = "<group>"; };
-		E9B113DBA553A2A21A3117E5C1B88EA3 /* ossl_typ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ossl_typ.h; path = "include-ios/openssl/ossl_typ.h"; sourceTree = "<group>"; };
-		EA98B490B62A1E6D7C0E9CFE30EC8C10 /* ui.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ui.h; path = "include-ios/openssl/ui.h"; sourceTree = "<group>"; };
-		EB020DA3CAEAF21812EB95FA5550DA03 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md4.h; path = "include-ios/openssl/md4.h"; sourceTree = "<group>"; };
-		EB895EFA9C099D2B84F5AB18DA4DC6D8 /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
-		ECB019811553423915875B392DACFEAB /* ts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ts.h; path = "include-ios/openssl/ts.h"; sourceTree = "<group>"; };
-		EE266BF8DA56CD90BF0A2F54304D87B4 /* BWWalkthrough-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BWWalkthrough-prefix.pch"; sourceTree = "<group>"; };
-		F07B174223A5E9B78FF5E0F9FCE9BDA9 /* conf_api.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = conf_api.h; path = "include-ios/openssl/conf_api.h"; sourceTree = "<group>"; };
-		F4FE7BADC8AD4E83716233B765308C67 /* libpjsua-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsua-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		F550D795A19A1014B7636C49B7232C22 /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
-		F55B65E3BAF8B310E98133F27CCF71BA /* libpjsip-ua-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-ua-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-ua-arm-apple-darwin9.a"; sourceTree = "<group>"; };
-		FC61158C085EBB1CAFCA73B52DCD6FB5 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
-		FD1EEDE4C2E4446D0411F9E17CD1331A /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
+		E0219AD789F5FDFFD7B864C21D8A2252 /* ocsp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ocsp.h; path = "include-ios/openssl/ocsp.h"; sourceTree = "<group>"; };
+		E1246AF0F8665FF66749BAA48475F304 /* idea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = idea.h; path = "include-ios/openssl/idea.h"; sourceTree = "<group>"; };
+		E12DCA06C83CF5643D9BF72504A23A27 /* bio.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bio.h; path = "include-ios/openssl/bio.h"; sourceTree = "<group>"; };
+		E1966C82823F3C40F01A664EE9ED727B /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = "include-ios/openssl/hmac.h"; sourceTree = "<group>"; };
+		E1DE484CAAF9CC5348F383AA14572FDB /* BWWalkthroughViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BWWalkthroughViewController.swift; path = BWWalkthrough/BWWalkthroughViewController.swift; sourceTree = "<group>"; };
+		E418C4BED19CDB41C751694DE15F1F56 /* libPhoneNumber_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = libPhoneNumber_iOS.framework; path = "libPhoneNumber-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7249E3A0446EFA762C7E55FE999630F /* rand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rand.h; path = "include-ios/openssl/rand.h"; sourceTree = "<group>"; };
+		E774B20B0DE0A7E4B03A0685C8B5B04C /* libpjsip-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsip-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsip-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		E97FB65A5306A83C737A8941F33D66B2 /* engine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = engine.h; path = "include-ios/openssl/engine.h"; sourceTree = "<group>"; };
+		EA8937CE0378F74727FDED6E1980FF57 /* libpjsua2-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjsua2-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjsua2-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		EB3D7D49BE5C28D53CAFC136C35F657E /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pkcs12.h; path = "include-ios/openssl/pkcs12.h"; sourceTree = "<group>"; };
+		EC5A00B3A8DBE7C437F2D315E49D0023 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA78D4D14455ACE8BB7FBB51CDF218F /* seed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = seed.h; path = "include-ios/openssl/seed.h"; sourceTree = "<group>"; };
+		F1A3D9A9A950A92E182F60FA2EA66D35 /* modes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = modes.h; path = "include-ios/openssl/modes.h"; sourceTree = "<group>"; };
+		F2E86040C0D01CC303DF14BCB80FB6E1 /* cast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cast.h; path = "include-ios/openssl/cast.h"; sourceTree = "<group>"; };
+		F51495A2AAEDCBB15F699C0F0FB1690B /* ripemd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ripemd.h; path = "include-ios/openssl/ripemd.h"; sourceTree = "<group>"; };
+		F893ED4AD29333A755AFEAEBA68D13A0 /* x509_vfy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = x509_vfy.h; path = "include-ios/openssl/x509_vfy.h"; sourceTree = "<group>"; };
+		F9D01CB8A2E74BC853CC12DAB8D7ACDF /* NBPhoneNumberDesc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NBPhoneNumberDesc.h; path = libPhoneNumber/NBPhoneNumberDesc.h; sourceTree = "<group>"; };
+		FAD2BBFD1D818CD0C7BB747384E1A9AB /* libpjmedia-codec-arm-apple-darwin9.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libpjmedia-codec-arm-apple-darwin9.a"; path = "Pod/pjsip-lib/libpjmedia-codec-arm-apple-darwin9.a"; sourceTree = "<group>"; };
+		FB5F0AE39F25320BF837289BD1C52C86 /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = rsa.h; path = "include-ios/openssl/rsa.h"; sourceTree = "<group>"; };
+		FC818349EAE31C3CDEBD49AEAA003333 /* dh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dh.h; path = "include-ios/openssl/dh.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,26 +262,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F66C58B8915C55D97F03179FB7123E4 /* Frameworks */ = {
+		55F65FC7D58C356E516B034975D5F360 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6948793B84D7FD504DDB5A06DE411D82 /* Foundation.framework in Frameworks */,
+				83D4707CFAB49D65BDEBEFA92C2DC8AB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AD24EC8A708C6192AC78B7CBEECBB5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A35D63B6EE7A1AE0BEC5E0F2EE820FE /* Foundation.framework in Frameworks */,
+				8CC38DEE112D2CA2A36FE0D59BEB797E /* libPhoneNumber_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C64AD316662FE44B882DF747CA414353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246F492EF9F428CE40A28B790B1395CC /* CoreTelephony.framework in Frameworks */,
+				17EAA065458CDF4AC55B34A4D70A2A1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		019E772F35941D3417EFB963B00F1C69 /* pjsip-ios */ = {
-			isa = PBXGroup;
-			children = (
-				7DC789790C809341CA3159D3CB9CC689 /* Frameworks */,
-			);
-			name = "pjsip-ios";
-			path = "pjsip-ios";
-			sourceTree = "<group>";
-		};
 		09B28764CF8BB16B25A957119794282E /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,178 +299,171 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4B57F1BF81BD57D4DFC8A133ED68A8EE /* BWWalkthrough */ = {
+		0A141EA55516FB88ABAC1AFA45B468F4 /* BWWalkthrough */ = {
 			isa = PBXGroup;
 			children = (
-				797B5917D00BA39442A00C44ECCF31E5 /* BWWalkthroughPageViewController.swift */,
-				B0853FD5E876AC745445D4E522BAF197 /* BWWalkthroughViewController.swift */,
-				F52D572B6772CC88D01FBDAD33153454 /* Support Files */,
+				CA312A6637A841D7E9F0C5A78534DAE5 /* BWWalkthroughPageViewController.swift */,
+				E1DE484CAAF9CC5348F383AA14572FDB /* BWWalkthroughViewController.swift */,
+				FE5AEACA245E1BBF0D4DD0C2FF777232 /* Support Files */,
 			);
 			name = BWWalkthrough;
 			path = BWWalkthrough;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		0CB6A2FA41972398813A9BF3FAD86368 /* pjsip-ios */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				11A01AC3BF696C3D230C26A73DE7DF2E /* Frameworks */,
+			);
+			name = "pjsip-ios";
+			path = "pjsip-ios";
+			sourceTree = "<group>";
+		};
+		11A01AC3BF696C3D230C26A73DE7DF2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF15E811077B4560A0595EA875BB4BFE /* libg7221codec-arm-apple-darwin9.a */,
+				63C891AA3EC5CF1428E64E507CD922F5 /* libgsmcodec-arm-apple-darwin9.a */,
+				6C9C2930974875958066F76F95149622 /* libilbccodec-arm-apple-darwin9.a */,
+				DD10F6E34A1E9BAB8CB246B15CEF4DAF /* libpj-arm-apple-darwin9.a */,
+				CDC66CD3A0D5CC4EE73AB619C6E5E2E6 /* libpjlib-util-arm-apple-darwin9.a */,
+				9C8AD9A5C6AF6D43508CDAFE3B8B6CA1 /* libpjmedia-arm-apple-darwin9.a */,
+				2CE515A93CDEC42486B7CA03732942F9 /* libpjmedia-audiodev-arm-apple-darwin9.a */,
+				FAD2BBFD1D818CD0C7BB747384E1A9AB /* libpjmedia-codec-arm-apple-darwin9.a */,
+				351495F089E84106240E0453F826320E /* libpjmedia-videodev-arm-apple-darwin9.a */,
+				6F6583CD1009753619AD7CC84F628FD2 /* libpjnath-arm-apple-darwin9.a */,
+				67E6D03E006365FFD33A71C9138A6925 /* libpjsdp-arm-apple-darwin9.a */,
+				E774B20B0DE0A7E4B03A0685C8B5B04C /* libpjsip-arm-apple-darwin9.a */,
+				661495A5168A124C7ED65F8629146438 /* libpjsip-simple-arm-apple-darwin9.a */,
+				4BE425B3B42255C6A0E29A8A60DB111B /* libpjsip-ua-arm-apple-darwin9.a */,
+				581F06E8B6C35D53A39EECECE93B489A /* libpjsua-arm-apple-darwin9.a */,
+				EA8937CE0378F74727FDED6E1980FF57 /* libpjsua2-arm-apple-darwin9.a */,
+				7ABBC62270D1136AF48E46368D5B2EA1 /* libresample-arm-apple-darwin9.a */,
+				1A644EA9DAC9A767FEDF0351F2EDAF6F /* libspeex-arm-apple-darwin9.a */,
+				011D80F511FCBE191BF2DACFDF5FE652 /* libsrtp-arm-apple-darwin9.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D1D8710E3C3C438380F4D03B17D7319 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9EA39AEEC3EF10974BCBB74BDA2DB221 /* CoreTelephony.framework */,
+				68D2276D732201B12B5DA9A3219081A8 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7609759AECB312188B6BCD709C222A2D /* Products */ = {
+		69F6332EF13BE618F20D9C2A155889AD /* JCDialPad */ = {
 			isa = PBXGroup;
 			children = (
-				9CE7AD9C80D8F565740F4AF83D351A1E /* BWWalkthrough.framework */,
-				4EA75749CD937418A75D109D1C8C43E5 /* Pods_phone_demo_swift.framework */,
+				0E1C5D1E27551AD227AC8A849E7FD109 /* JCDialPad.h */,
+				C18771178B887C28D8F9772A944EFF40 /* JCDialPad.m */,
+				6A68C185B2BEC5D7884E76AA01B5DBEA /* JCPadButton.h */,
+				06491A157CE3798177FFD623AA6FD70E /* JCPadButton.m */,
+				B3B07A9D8CED9E8ACA91E2BF053AF423 /* UIView+FrameAccessor.h */,
+				A0A7A6498CE3A5CB13C85ABBF15EAFBF /* UIView+FrameAccessor.m */,
+				9265BD7B2C51B1446BC3BD8C7B14CD98 /* Support Files */,
 			);
-			name = Products;
+			name = JCDialPad;
+			path = JCDialPad;
+			sourceTree = "<group>";
+		};
+		78858A8A62E760528428AFE5997F94C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3315CBF60FEE8263EE8E5334F4C54953 /* libPhoneNumber_iOS.framework */,
+				1D1D8710E3C3C438380F4D03B17D7319 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B9F02D7F0BF91A92AD5591FE13F3FD79 /* Pods */,
-				7609759AECB312188B6BCD709C222A2D /* Products */,
+				78858A8A62E760528428AFE5997F94C0 /* Frameworks */,
+				B3C27005197FB75755C2EE8A894CDAC1 /* Pods */,
+				864C83CF9DCB656A8C7C9E3967714BB7 /* Products */,
 				09B28764CF8BB16B25A957119794282E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7DC789790C809341CA3159D3CB9CC689 /* Frameworks */ = {
+		864C83CF9DCB656A8C7C9E3967714BB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C030DF6C77310E3E9BB17541633396BC /* libg7221codec-arm-apple-darwin9.a */,
-				3F4C0605D0557484960C5FC0590D80A7 /* libgsmcodec-arm-apple-darwin9.a */,
-				BA0CC3D21F693EB7455248EF534583EF /* libilbccodec-arm-apple-darwin9.a */,
-				B7319AB1EDF6A0B93D03D1FF6CFA3AF3 /* libpj-arm-apple-darwin9.a */,
-				0259A3C82DB68893C924DCF82B1B4AEE /* libpjlib-util-arm-apple-darwin9.a */,
-				45F40130D79448B519C94DE42F01988E /* libpjmedia-arm-apple-darwin9.a */,
-				8BCFB5F2E357127E01D8126DDB2D558B /* libpjmedia-audiodev-arm-apple-darwin9.a */,
-				3DE2453A20773218E42F93B6FD3020D3 /* libpjmedia-codec-arm-apple-darwin9.a */,
-				52747443732C594D2583D8CB52651E5C /* libpjmedia-videodev-arm-apple-darwin9.a */,
-				3CFF3719B7C0B7A7AEC620F2B6F449FD /* libpjnath-arm-apple-darwin9.a */,
-				0DCE5DA249B9143C902ED52286D3059E /* libpjsdp-arm-apple-darwin9.a */,
-				282E97CBDA49D01AEF5D265FEBC0BF38 /* libpjsip-arm-apple-darwin9.a */,
-				973C38F7865D96AF4DAA135355741DC3 /* libpjsip-simple-arm-apple-darwin9.a */,
-				F55B65E3BAF8B310E98133F27CCF71BA /* libpjsip-ua-arm-apple-darwin9.a */,
-				F4FE7BADC8AD4E83716233B765308C67 /* libpjsua-arm-apple-darwin9.a */,
-				6E3E7FFF9465EE395E16C24093153010 /* libpjsua2-arm-apple-darwin9.a */,
-				DFFF0095AD45762909C5F31E30B30BCD /* libresample-arm-apple-darwin9.a */,
-				6388A22E8017FB3B44FBF1ECDE604E1E /* libspeex-arm-apple-darwin9.a */,
-				45DB99C73D9CA9E013E1A3D6C5BCB286 /* libsrtp-arm-apple-darwin9.a */,
+				9A5C5BA0138CC4C97A843EA32A7F7513 /* BWWalkthrough.framework */,
+				D376856E495F7B919646443089F9ACE2 /* JCDialPad.framework */,
+				E418C4BED19CDB41C751694DE15F1F56 /* libPhoneNumber_iOS.framework */,
+				9693A5AABF1B95AA0EEA6EA5F486C180 /* Pods_phone_demo_swift.framework */,
 			);
-			name = Frameworks;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		940AB20C41434689F2CEAFBBE54F8FE4 /* Frameworks */ = {
+		9265BD7B2C51B1446BC3BD8C7B14CD98 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C6A0FBB259368E7E6FE920A787389CDE /* libcrypto.a */,
-				C55FE657B5283FD5D75EF2B8B0176B1F /* libssl.a */,
+				EC5A00B3A8DBE7C437F2D315E49D0023 /* Info.plist */,
+				71A805E77276E4C9940FB17F634400F0 /* JCDialPad.modulemap */,
+				478932B871D165E19F48FAD0D5EB8F8D /* JCDialPad.xcconfig */,
+				74CBC9A7A1D07B8B162283F7AE3EF2F6 /* JCDialPad-dummy.m */,
+				CA8DDCF81A25B9E4B84D5F40BDC5D1F7 /* JCDialPad-prefix.pch */,
+				9F0B3FA0570285798FA3853F0E6566D1 /* JCDialPad-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/JCDialPad";
 			sourceTree = "<group>";
 		};
-		992A5B2759F4DA762FB39E10AD1D189F /* OpenSSL-Universal */ = {
+		B3C27005197FB75755C2EE8A894CDAC1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CC907F6D4840D0540DB2CBCCBEC030E0 /* aes.h */,
-				974626ABB2B6D52BB4F5E9536C93BA27 /* asn1.h */,
-				E8D44C0E16D267A9646D4BC6E1FB164B /* asn1_mac.h */,
-				0598E2AE01679FC34099C54D0FBAA5B3 /* asn1t.h */,
-				8EE64DF7BC213534FA64699CD15CB050 /* bio.h */,
-				6DEEE32D961AE551D75E682E0408912F /* blowfish.h */,
-				AB36FF51BF1DA19B542E02341744740F /* bn.h */,
-				09E4A2292C9C83032A2BAB5D1A36D4A1 /* buffer.h */,
-				3CB9B236469F3B9B8FA452B26000685F /* camellia.h */,
-				70823298F4A4DD0F591AB756F201CDCE /* cast.h */,
-				1FCD36B966026E20B97483E473408ADA /* cmac.h */,
-				81DCF2B7479C29FB3AD77F95719A229E /* cms.h */,
-				74F9CE58C0E63211DAAB32BC04FFF322 /* comp.h */,
-				BE889A0D85EC82F203EFD26239A79093 /* conf.h */,
-				F07B174223A5E9B78FF5E0F9FCE9BDA9 /* conf_api.h */,
-				A947F4F5ACD5369E14475DF8EAE6B344 /* crypto.h */,
-				BBE4789FB9E75AD781546EC4B00E3FDD /* des.h */,
-				87A7B05C50181D2682B969FBFF095ED7 /* des_old.h */,
-				C6916F270B7296674222228C28C92B91 /* dh.h */,
-				A1A195E06FA2846AAC2B8676754BF9AB /* dsa.h */,
-				0D57A43C19CDC424BD50944DCC770B09 /* dso.h */,
-				039FF8C6565AF32EA062E8E7FD6C88EE /* dtls1.h */,
-				B512E4ACE75A87762A8E473DF6B1C784 /* e_os2.h */,
-				8CECD759306A7B166A57637DE717F7AF /* ebcdic.h */,
-				A055A3818739AF2F9DE2A6D88725C1DA /* ec.h */,
-				28B4AF94CFF863FE556F2FCAC20EE7AC /* ecdh.h */,
-				A5BC923BDCB63A56E2FB2862ED95C5BF /* ecdsa.h */,
-				FD1EEDE4C2E4446D0411F9E17CD1331A /* engine.h */,
-				99AFB0B36417BBD146F8D7A0521C26A0 /* err.h */,
-				BE571ACD3939CD4F1BF78B1F7B066326 /* evp.h */,
-				6C3E868FAB35D99E2470BAAC5CDCB1C5 /* hmac.h */,
-				BB7E99FF41F945864CA7A1078F325D30 /* idea.h */,
-				348F7D1D25C890CDC6F5B31A3C86BBA8 /* krb5_asn.h */,
-				25079C1D6314B5BBD6A73275AA0B5524 /* kssl.h */,
-				A5B8E6DB6EBA7D3B03DED728F75F55F6 /* lhash.h */,
-				EB020DA3CAEAF21812EB95FA5550DA03 /* md4.h */,
-				5D01FAFFA2D3E796AC472CD7E546714A /* md5.h */,
-				19365FBF1A59CE7DA752DFF0A0205902 /* mdc2.h */,
-				A6D404555AC2A24812009D2D76CE768B /* modes.h */,
-				45AEF3B3110C80F1BBFE53C5E2E4A965 /* obj_mac.h */,
-				DE3D20A5F59F8AAAB32EAB332A175D4B /* objects.h */,
-				A0BD3F2A69B109BECEA6F5A7D07A1273 /* ocsp.h */,
-				E82B0552D8F8EE7530C882B08CBAA824 /* opensslconf.h */,
-				BA89C7CBDD8C93042DFB32446C755E7B /* opensslv.h */,
-				E9B113DBA553A2A21A3117E5C1B88EA3 /* ossl_typ.h */,
-				18C530FD43445C8967088647171A751D /* pem.h */,
-				C787FC8891782C45D4340CDB2C3E3587 /* pem2.h */,
-				F550D795A19A1014B7636C49B7232C22 /* pkcs12.h */,
-				1C7772F26AE2EBAAE3A8BABF6533EE7D /* pkcs7.h */,
-				D203BBD6F21CCBF01C3C1066D8FF423F /* pqueue.h */,
-				BB1D96C9A1EEA3EBBC180F18AB342359 /* rand.h */,
-				3470F7992550C18CD26AF821088B5AE7 /* rc2.h */,
-				5315D96A09D9AA3452F7F0F41E4C1210 /* rc4.h */,
-				EB895EFA9C099D2B84F5AB18DA4DC6D8 /* ripemd.h */,
-				FC61158C085EBB1CAFCA73B52DCD6FB5 /* rsa.h */,
-				97E898361A7E508AAC65F1CE138FEB58 /* safestack.h */,
-				971A5F2A4E678F4F80CDBC9BC257534F /* seed.h */,
-				CED79AF0B21FB59BAEA64C777E7A5106 /* sha.h */,
-				B137B4B29D50699F727B027C9197F8DC /* srp.h */,
-				28FD7E726AECC8D974BAA6396996055F /* srtp.h */,
-				ABFB14BDE60825869CD136AA8023207E /* ssl.h */,
-				4A0453E880C3D5084F1443AB2B9BB3EF /* ssl2.h */,
-				C27DCF44C022A530AE59169F1F2031E5 /* ssl23.h */,
-				C1CF481E03A45011DECB3168D9353866 /* ssl3.h */,
-				DE01103444B5EC0898644E4EE5478C90 /* stack.h */,
-				1A05B1F0E6C98CFB90AFD205963A6717 /* symhacks.h */,
-				89745F090EBA7E16770634D9B855117D /* tls1.h */,
-				ECB019811553423915875B392DACFEAB /* ts.h */,
-				8E7CABE8AFAE3F9151229F2576679D69 /* txt_db.h */,
-				EA98B490B62A1E6D7C0E9CFE30EC8C10 /* ui.h */,
-				9685F26C4F8AC07A1E482E860B5E3BA8 /* ui_compat.h */,
-				4B61BCD959C29B7DAFCB0D09FF60D361 /* whrlpool.h */,
-				924911D8390733463A0F2CAA1ECB15F2 /* x509.h */,
-				0A29F7E86DCCC7FB01F84E9E90CEA6DE /* x509_vfy.h */,
-				788659318DED47138CD01E7ABAD3AC4B /* x509v3.h */,
-				940AB20C41434689F2CEAFBBE54F8FE4 /* Frameworks */,
-			);
-			name = "OpenSSL-Universal";
-			path = "OpenSSL-Universal";
-			sourceTree = "<group>";
-		};
-		B9F02D7F0BF91A92AD5591FE13F3FD79 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4B57F1BF81BD57D4DFC8A133ED68A8EE /* BWWalkthrough */,
-				992A5B2759F4DA762FB39E10AD1D189F /* OpenSSL-Universal */,
-				019E772F35941D3417EFB963B00F1C69 /* pjsip-ios */,
+				0A141EA55516FB88ABAC1AFA45B468F4 /* BWWalkthrough */,
+				69F6332EF13BE618F20D9C2A155889AD /* JCDialPad */,
+				B576571030AE2984F9DB3D32B188948F /* libPhoneNumber-iOS */,
+				F647CFE2638DC0CD0F707F48B5434224 /* OpenSSL-Universal */,
+				0CB6A2FA41972398813A9BF3FAD86368 /* pjsip-ios */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B576571030AE2984F9DB3D32B188948F /* libPhoneNumber-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				6AB42EDCCE58B0296939A853C8780A84 /* NBAsYouTypeFormatter.h */,
+				5EA6C324F04F3642F7E17A70F9A25C05 /* NBAsYouTypeFormatter.m */,
+				A0B4E9DE92CA853E8785B901D203AF18 /* NBMetadataCore.h */,
+				5BF56A81DB1D4C22C97CCA6D08CB8A1E /* NBMetadataCore.m */,
+				988DC3A22031B4C9A2ACCFAD6B2A61C5 /* NBMetadataCoreMapper.h */,
+				163599C6F385994F201A8F75C9F175B1 /* NBMetadataCoreMapper.m */,
+				1F9FD5D962D651701C230EC5A7C6EAC1 /* NBMetadataCoreTest.h */,
+				2F8D10E10440B686C9F356BB232C26D4 /* NBMetadataCoreTest.m */,
+				C32833469AA2541C6FDA0298D2C9CB83 /* NBMetadataCoreTestMapper.h */,
+				2ED267F95879131DFBF9A68FE3035698 /* NBMetadataCoreTestMapper.m */,
+				4E5CCE9270E954298638F1E67D8DAA36 /* NBMetadataHelper.h */,
+				4733C9923D18FCD42B7973A5ACA38053 /* NBMetadataHelper.m */,
+				5F0BEB321934D8EECB5B70D16DFCBD12 /* NBNumberFormat.h */,
+				3C07269688B5558BAC81D8BE41F9460F /* NBNumberFormat.m */,
+				36AB7E8F90F90E0F420A1F39C22B07E1 /* NBPhoneMetaData.h */,
+				2DF590957C34FB8C9614A0B40EE3C2BF /* NBPhoneMetaData.m */,
+				A0865FDEA7DC96C11AEE82E39F351C38 /* NBPhoneNumber.h */,
+				1D5301C75867E93DC411EA71BE45A061 /* NBPhoneNumber.m */,
+				642DE4ED67F69F0687CDECB4B54429AD /* NBPhoneNumberDefines.h */,
+				883C742F678C5480CF1DA5DF040C82BC /* NBPhoneNumberDefines.m */,
+				F9D01CB8A2E74BC853CC12DAB8D7ACDF /* NBPhoneNumberDesc.h */,
+				3F32167DDDBAFA49A8B1EA16AFE70EFD /* NBPhoneNumberDesc.m */,
+				09E8F66FD67ABE9FA56024A89B0B84F6 /* NBPhoneNumberUtil.h */,
+				78BC6718132BBD9BB330C09724DAE872 /* NBPhoneNumberUtil.m */,
+				D6AC174165F2A0F475B8B24FD4A79036 /* Support Files */,
+			);
+			name = "libPhoneNumber-iOS";
+			path = "libPhoneNumber-iOS";
+			sourceTree = "<group>";
+		};
+		B785EBBBCA6A9CB99F31EAC8DBCEA907 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA511CA245A903BEF0AE8F329E7BE9C1 /* libcrypto.a */,
+				04F5F6562086A079E967516FDC3A4509 /* libssl.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -379,15 +486,113 @@
 			path = "Target Support Files/Pods-phone-demo-swift";
 			sourceTree = "<group>";
 		};
-		F52D572B6772CC88D01FBDAD33153454 /* Support Files */ = {
+		D6AC174165F2A0F475B8B24FD4A79036 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				70D569C416BCA4D37EF2B6BEF626FA23 /* BWWalkthrough.modulemap */,
-				91BF8A823FC515F250BCEA164E2A0B46 /* BWWalkthrough.xcconfig */,
-				09B419C6A4956C553EEFABA26A588140 /* BWWalkthrough-dummy.m */,
-				EE266BF8DA56CD90BF0A2F54304D87B4 /* BWWalkthrough-prefix.pch */,
-				63E8F804A93DE243A8E7338F38FBCF39 /* BWWalkthrough-umbrella.h */,
-				17E16E35BDD7316E748F916490B0F982 /* Info.plist */,
+				C39548811E763DB7D4381A611C0A091E /* Info.plist */,
+				D250DE3CCABF8DFE93E99ABDA6F00C3A /* libPhoneNumber-iOS.modulemap */,
+				718E3F977DF5071B88E0893AA6CE0CF5 /* libPhoneNumber-iOS.xcconfig */,
+				CA7D7A09BBA064DCEDCE996D64F1B851 /* libPhoneNumber-iOS-dummy.m */,
+				20AD6B286F212437437C8CB585577293 /* libPhoneNumber-iOS-prefix.pch */,
+				8EB270E5EF96131050E0D3879E7BC3B8 /* libPhoneNumber-iOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libPhoneNumber-iOS";
+			sourceTree = "<group>";
+		};
+		F647CFE2638DC0CD0F707F48B5434224 /* OpenSSL-Universal */ = {
+			isa = PBXGroup;
+			children = (
+				83EF8C3C3A4E7B4A9D22CA9F912636F5 /* aes.h */,
+				44ADB8B7A74A90BFFCE41114A72DA498 /* asn1.h */,
+				1874A3B5FB3CB7F4006FE3808B535DA0 /* asn1_mac.h */,
+				06B8A3B49B5796C671E89759635448C5 /* asn1t.h */,
+				E12DCA06C83CF5643D9BF72504A23A27 /* bio.h */,
+				9642A0FA405C9AB2F76E5AF5FD388E7B /* blowfish.h */,
+				7618475C1A01B298578C14864CE8DA8C /* bn.h */,
+				0DE2F3E9802A3A6AF947847DAF71C203 /* buffer.h */,
+				AB145EC26D91E45B90B8FEAB4ABC9840 /* camellia.h */,
+				F2E86040C0D01CC303DF14BCB80FB6E1 /* cast.h */,
+				A3AF8F242CD92AFEE284BBCFE8E827A6 /* cmac.h */,
+				3554D5164DF5F7BE6B92034C761407C1 /* cms.h */,
+				6CB27FD4875B51AE6D5DF390B7C6D528 /* comp.h */,
+				D9C2F00520A12A684A572CED08111A06 /* conf.h */,
+				113E662FA87DDBE3791C5CD060DE0C6A /* conf_api.h */,
+				BDC179DA1FFD4BCF9DF0A86FC03D3138 /* crypto.h */,
+				3B851662AEDA13E10C3DD2F2198F36CC /* des.h */,
+				B7D03907FCC659326C6E3A409E020346 /* des_old.h */,
+				FC818349EAE31C3CDEBD49AEAA003333 /* dh.h */,
+				DDAF2C9600AAFE66D73E104463DFF9D7 /* dsa.h */,
+				427D48A0B6DD62B7754B11B8785C17A8 /* dso.h */,
+				AA6C0A1099A7100050F48E87D2620EE2 /* dtls1.h */,
+				16705A762BC5CAAD3E98316F7CF14E52 /* e_os2.h */,
+				D1BF973ACF43FEE370A5B2ACA40116E8 /* ebcdic.h */,
+				A7EA5EBB0AC63EEDAA70E8132C1768B0 /* ec.h */,
+				4921D2E204CA1ED7BD65C01AB9EFE959 /* ecdh.h */,
+				A80431DCC434A362B33756CE9629E7E4 /* ecdsa.h */,
+				E97FB65A5306A83C737A8941F33D66B2 /* engine.h */,
+				1B39D8672F47A5A7471DFD3BB0C70C44 /* err.h */,
+				1B24403839A256F10499B57C66619F82 /* evp.h */,
+				E1966C82823F3C40F01A664EE9ED727B /* hmac.h */,
+				E1246AF0F8665FF66749BAA48475F304 /* idea.h */,
+				A8A096146E6B8F80F7F4D667D16CAF31 /* krb5_asn.h */,
+				A5C22E9C083E2B0C5F9C17B714271B4B /* kssl.h */,
+				C8F57BB19FDA63D4FC10052E21DC3408 /* lhash.h */,
+				813CB6A8A029D1669A4A723A3505F71A /* md4.h */,
+				72F6BB81AA8898985E9D778A6F34B201 /* md5.h */,
+				B997EE55AB69FC3F4ECF1FC613F9DB61 /* mdc2.h */,
+				F1A3D9A9A950A92E182F60FA2EA66D35 /* modes.h */,
+				0EA1FF4E7A5E221C8E33C1AF0D8AD65A /* obj_mac.h */,
+				7039725C82E9A9ED1BD78E19D414417D /* objects.h */,
+				E0219AD789F5FDFFD7B864C21D8A2252 /* ocsp.h */,
+				941616E98F32C2EC9372CEEA28184527 /* opensslconf.h */,
+				5FB61D0A5B7B83394A8CBBD18DA890C3 /* opensslv.h */,
+				9471C3D74A31590C54BF75485038E28B /* ossl_typ.h */,
+				D7EB0B67493458A0C1C366292451B771 /* pem.h */,
+				AA567046B767D027F953D5B0CC1E56BA /* pem2.h */,
+				EB3D7D49BE5C28D53CAFC136C35F657E /* pkcs12.h */,
+				97564C48B9ABCEFBDD2A4FF8A3435D7F /* pkcs7.h */,
+				687F79B6A7C9739207497AEC350ED533 /* pqueue.h */,
+				E7249E3A0446EFA762C7E55FE999630F /* rand.h */,
+				981AFB7F65948FF69E08CDB43D155909 /* rc2.h */,
+				7616AAE9A113124F09512366EBB9ECB4 /* rc4.h */,
+				F51495A2AAEDCBB15F699C0F0FB1690B /* ripemd.h */,
+				FB5F0AE39F25320BF837289BD1C52C86 /* rsa.h */,
+				3EE9461FD3119D1C1D80BD2AD0972EF9 /* safestack.h */,
+				EEA78D4D14455ACE8BB7FBB51CDF218F /* seed.h */,
+				B7CC79DB1F9F2EB664C5A7E72DCDFE77 /* sha.h */,
+				6796DD3B2E9B4B14284E83ACC7E78F71 /* srp.h */,
+				45B909348A0C53C738C3BC619657B9F9 /* srtp.h */,
+				CDDB503D68F52D566FD76269873ACC35 /* ssl.h */,
+				4D1915C36C2CD09760F4F5F56C893A04 /* ssl2.h */,
+				B62074A42D514C3BFF09AF7227DAB843 /* ssl23.h */,
+				8F8E5C9A26B9F346F6292FEDFF2D93EA /* ssl3.h */,
+				58BC209E8F17D18DCDB51A53EBA271AE /* stack.h */,
+				0B551B3983C7339042660484A48E56DB /* symhacks.h */,
+				C59B25AAC217CC6B26D4DF9DCEEED0F8 /* tls1.h */,
+				C355A6A75375FA38A2D98D95EB25721B /* ts.h */,
+				AAF5CB999AD3322367009A0734CFE7DB /* txt_db.h */,
+				C11A89D669FD1ABAD95B335920549F96 /* ui.h */,
+				21C8F12B7A8A4C2F201F9EA63718A455 /* ui_compat.h */,
+				0E9C281E1D84B4379D5218650D972A7B /* whrlpool.h */,
+				987D8AF3CB6488E2225676FC8563AE7E /* x509.h */,
+				F893ED4AD29333A755AFEAEBA68D13A0 /* x509_vfy.h */,
+				A1F5D1BC7FBF770F3B88B4AC7D6A8D59 /* x509v3.h */,
+				B785EBBBCA6A9CB99F31EAC8DBCEA907 /* Frameworks */,
+			);
+			name = "OpenSSL-Universal";
+			path = "OpenSSL-Universal";
+			sourceTree = "<group>";
+		};
+		FE5AEACA245E1BBF0D4DD0C2FF777232 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AF42CF3AF9DD437D6461B3BA187819F /* BWWalkthrough.modulemap */,
+				9F671066BF60482EF3F4B8F472A6DC71 /* BWWalkthrough.xcconfig */,
+				4045BD2742392935203180A81194C0F4 /* BWWalkthrough-dummy.m */,
+				1B9E430952B7D8E47C58EDC94D769C47 /* BWWalkthrough-prefix.pch */,
+				372FAA23CF86C8E694519183715EA57A /* BWWalkthrough-umbrella.h */,
+				B8C62B40E334CFD9FCD36FF5D5BA34C9 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/BWWalkthrough";
@@ -396,14 +601,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		063807B66775F1B57B76DE8F28A89E52 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4BA85894FFFB29FA8D8C6F2A7D0E27E /* Pods-phone-demo-swift-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		115F95067CD058228E8BC752641B10F3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,25 +609,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1746E1C9EAAE253E2EAAD1462D55E28C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DDE649E8DC7B33B71ABBE8B48FE7804 /* Pods-phone-demo-swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE05ACC93B2FE0285CF4C7352EB253B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93584283E28A37067E4772623B65517 /* libPhoneNumber-iOS-umbrella.h in Headers */,
+				4E3D1DDD2EF47B4DCBE785AE8098AAC6 /* NBAsYouTypeFormatter.h in Headers */,
+				63DE3C731F4DBBEB8356663ACF9B047F /* NBMetadataCore.h in Headers */,
+				935FF1F77DB9962E63C0650264D45761 /* NBMetadataCoreMapper.h in Headers */,
+				9CCFBFDA244D0F7EA43D6F1628F783A6 /* NBMetadataCoreTest.h in Headers */,
+				8DF2202157042C8E084599F2B2D7A639 /* NBMetadataCoreTestMapper.h in Headers */,
+				F202D25618D1A87026B0B977C9516957 /* NBMetadataHelper.h in Headers */,
+				E302C8B97300AD55531E8BD7DF5C7758 /* NBNumberFormat.h in Headers */,
+				D05E8F40D8CD2F4FACECB49A1AA652C1 /* NBPhoneMetaData.h in Headers */,
+				E86FF765BDC2514A14568ABC5F2CBB2A /* NBPhoneNumber.h in Headers */,
+				D5F48404A04D735E76F2917662362AD2 /* NBPhoneNumberDefines.h in Headers */,
+				B59BCD418C99DE90F2EF194502043EEF /* NBPhoneNumberDesc.h in Headers */,
+				6DE901AB7DCB046C76453DBAC6661F44 /* NBPhoneNumberUtil.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F465DB0CDD70B464131B61A5455F917F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FE4C255B9BDAFE8A5602354E0937999 /* JCDialPad-umbrella.h in Headers */,
+				0751061D16CB4FF94117E3D9699BFC83 /* JCDialPad.h in Headers */,
+				DDC62B1373C35417D76A1120A4BFCE35 /* JCPadButton.h in Headers */,
+				8221A54B2A83BCA311FBC000334A7D8A /* UIView+FrameAccessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		57C9B8E0A3403763B9D4EFF992447936 /* Pods-phone-demo-swift */ = {
+		88C2523B69DE1AD6D791628BE542D9C4 /* JCDialPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64F77574A855BB50F9FEB6F841CC7BD2 /* Build configuration list for PBXNativeTarget "Pods-phone-demo-swift" */;
+			buildConfigurationList = 954C00D703FD1FFA1B09D73095CF84D8 /* Build configuration list for PBXNativeTarget "JCDialPad" */;
 			buildPhases = (
-				3A0B57B43E9A75F295B735540339B4A7 /* Sources */,
-				6F66C58B8915C55D97F03179FB7123E4 /* Frameworks */,
-				063807B66775F1B57B76DE8F28A89E52 /* Headers */,
+				23CF9B6DA6210C260D802193687247DC /* Sources */,
+				6AD24EC8A708C6192AC78B7CBEECBB5B /* Frameworks */,
+				F465DB0CDD70B464131B61A5455F917F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7161F2C4A9E053A14E49DA0255915330 /* PBXTargetDependency */,
+				078183D4D7F852A1FE86A0EB4BB0422D /* PBXTargetDependency */,
 			);
-			name = "Pods-phone-demo-swift";
-			productName = "Pods-phone-demo-swift";
-			productReference = 4EA75749CD937418A75D109D1C8C43E5 /* Pods_phone_demo_swift.framework */;
+			name = JCDialPad;
+			productName = JCDialPad;
+			productReference = D376856E495F7B919646443089F9ACE2 /* JCDialPad.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9889562781163BF5CB84E06A985BCE44 /* BWWalkthrough */ = {
@@ -447,7 +683,44 @@
 			);
 			name = BWWalkthrough;
 			productName = BWWalkthrough;
-			productReference = 9CE7AD9C80D8F565740F4AF83D351A1E /* BWWalkthrough.framework */;
+			productReference = 9A5C5BA0138CC4C97A843EA32A7F7513 /* BWWalkthrough.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF539237882C886DCFB8D95ECF8490F3 /* libPhoneNumber-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAF2EEA151A3C31C4BB222E2515F5D6F /* Build configuration list for PBXNativeTarget "libPhoneNumber-iOS" */;
+			buildPhases = (
+				1E7425C6FB802FBDFF6660A6A675717A /* Sources */,
+				C64AD316662FE44B882DF747CA414353 /* Frameworks */,
+				CE05ACC93B2FE0285CF4C7352EB253B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libPhoneNumber-iOS";
+			productName = "libPhoneNumber-iOS";
+			productReference = E418C4BED19CDB41C751694DE15F1F56 /* libPhoneNumber_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CAC151665E6696B5AA34E15403598B17 /* Pods-phone-demo-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7F16A1060ED16C24FC64EC4299E161D /* Build configuration list for PBXNativeTarget "Pods-phone-demo-swift" */;
+			buildPhases = (
+				2414360BE0762B59AE868344B25E92EF /* Sources */,
+				55F65FC7D58C356E516B034975D5F360 /* Frameworks */,
+				1746E1C9EAAE253E2EAAD1462D55E28C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD46BA53A2C1D09200C67A32057E9384 /* PBXTargetDependency */,
+				4EBDE62E593D9AB91FFFCF82C08ED4C2 /* PBXTargetDependency */,
+				29DAEDEBBCC1E07AFD19EBB37F4C6A5E /* PBXTargetDependency */,
+			);
+			name = "Pods-phone-demo-swift";
+			productName = "Pods-phone-demo-swift";
+			productReference = 9693A5AABF1B95AA0EEA6EA5F486C180 /* Pods_phone_demo_swift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -467,12 +740,14 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7609759AECB312188B6BCD709C222A2D /* Products */;
+			productRefGroup = 864C83CF9DCB656A8C7C9E3967714BB7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9889562781163BF5CB84E06A985BCE44 /* BWWalkthrough */,
-				57C9B8E0A3403763B9D4EFF992447936 /* Pods-phone-demo-swift */,
+				88C2523B69DE1AD6D791628BE542D9C4 /* JCDialPad */,
+				BF539237882C886DCFB8D95ECF8490F3 /* libPhoneNumber-iOS */,
+				CAC151665E6696B5AA34E15403598B17 /* Pods-phone-demo-swift */,
 			);
 		};
 /* End PBXProject section */
@@ -488,63 +763,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A0B57B43E9A75F295B735540339B4A7 /* Sources */ = {
+		1E7425C6FB802FBDFF6660A6A675717A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D8BEBBEBC47D5BDA7F4E123000E85F3 /* Pods-phone-demo-swift-dummy.m in Sources */,
+				EB7E168F2046A08ED9BCF7E11D24689A /* libPhoneNumber-iOS-dummy.m in Sources */,
+				995CE3CEBDDD984DF010D540EA6A5F6B /* NBAsYouTypeFormatter.m in Sources */,
+				25CE0A026553069D188D722E55AB556A /* NBMetadataCore.m in Sources */,
+				BD30D411ACA30260AD6BE3AECB743DFA /* NBMetadataCoreMapper.m in Sources */,
+				05A97539F7A49BE8C55D20E4A19E8803 /* NBMetadataCoreTest.m in Sources */,
+				E54A9C3FE63589340A0EE2597D19CCA9 /* NBMetadataCoreTestMapper.m in Sources */,
+				A3291006AC10F0E7F72AA0F94AF05D9A /* NBMetadataHelper.m in Sources */,
+				14D0848DA6343501A7A6A5715F9DCE57 /* NBNumberFormat.m in Sources */,
+				91362C6708A514418EB87C9927B8409E /* NBPhoneMetaData.m in Sources */,
+				C0EF466B459802A6357DAB043C4639EC /* NBPhoneNumber.m in Sources */,
+				A07777F6DCB0558B1912BA59DD703C01 /* NBPhoneNumberDefines.m in Sources */,
+				19FB2F0D5D4EFCFC829E73D2164B76CC /* NBPhoneNumberDesc.m in Sources */,
+				D815AD3E80DA9C86BA662CBDC03E395B /* NBPhoneNumberUtil.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23CF9B6DA6210C260D802193687247DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2E9694C843A1FEB2B1284685D8894D /* JCDialPad-dummy.m in Sources */,
+				1C8E78937DA7D3D5AE88389E4C867EB1 /* JCDialPad.m in Sources */,
+				0733D1359303EB0CD27419414523EAD7 /* JCPadButton.m in Sources */,
+				2CBB3CC70F1AC0ED5E98BB917EE41F33 /* UIView+FrameAccessor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2414360BE0762B59AE868344B25E92EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE456580195EE641D008838840EF15BF /* Pods-phone-demo-swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7161F2C4A9E053A14E49DA0255915330 /* PBXTargetDependency */ = {
+		078183D4D7F852A1FE86A0EB4BB0422D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libPhoneNumber-iOS";
+			target = BF539237882C886DCFB8D95ECF8490F3 /* libPhoneNumber-iOS */;
+			targetProxy = 0DECF11DB22DB28955FEC94B44777F05 /* PBXContainerItemProxy */;
+		};
+		29DAEDEBBCC1E07AFD19EBB37F4C6A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libPhoneNumber-iOS";
+			target = BF539237882C886DCFB8D95ECF8490F3 /* libPhoneNumber-iOS */;
+			targetProxy = F51971AF81CF3F4B159BE29F0D1929DE /* PBXContainerItemProxy */;
+		};
+		4EBDE62E593D9AB91FFFCF82C08ED4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JCDialPad;
+			target = 88C2523B69DE1AD6D791628BE542D9C4 /* JCDialPad */;
+			targetProxy = D78D8F147CA8B46437C58612BA4F143E /* PBXContainerItemProxy */;
+		};
+		DD46BA53A2C1D09200C67A32057E9384 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BWWalkthrough;
 			target = 9889562781163BF5CB84E06A985BCE44 /* BWWalkthrough */;
-			targetProxy = 3772216DF7745056F97BFB0F24310EBB /* PBXContainerItemProxy */;
+			targetProxy = 7DF60CAA95B7B1677A95BCBEE087D8D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1E623C839C32A7C7A0CBFF60D2618BC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 835DEDC91871E0E53FD1DE90ACB5633B /* Pods-phone-demo-swift.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-phone-demo-swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-phone-demo-swift/Pods-phone-demo-swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_phone_demo_swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		27B07C6E6C6ECCAC09B45660449650A0 /* Release */ = {
+		046AAF476BDCE54C63E4DCA3A0F2B7B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 02227870431466AD6FDA7248A1251455 /* Pods-phone-demo-swift.release.xcconfig */;
 			buildSettings = {
@@ -561,7 +849,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-phone-demo-swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-phone-demo-swift/Pods-phone-demo-swift.modulemap";
@@ -579,49 +867,9 @@
 			};
 			name = Release;
 		};
-		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+		47B42F5FBE4DEDE99AF4FF1EE4B7798F /* Release */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		E216A868E55C80F48471A5C5889BE7B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91BF8A823FC515F250BCEA164E2A0B46 /* BWWalkthrough.xcconfig */;
+			baseConfigurationReference = 478932B871D165E19F48FAD0D5EB8F8D /* JCDialPad.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -634,14 +882,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BWWalkthrough/BWWalkthrough-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JCDialPad/JCDialPad-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JCDialPad/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BWWalkthrough/BWWalkthrough.modulemap";
+				MODULEMAP_FILE = "Target Support Files/JCDialPad/JCDialPad.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BWWalkthrough;
+				PRODUCT_NAME = JCDialPad;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -651,7 +899,7 @@
 			};
 			name = Release;
 		};
-		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -687,7 +935,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -695,9 +943,213 @@
 			};
 			name = Debug;
 		};
+		8380DA25C4C4602CC470FAE7414EA489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718E3F977DF5071B88E0893AA6CE0CF5 /* libPhoneNumber-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/libPhoneNumber-iOS/libPhoneNumber-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libPhoneNumber-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libPhoneNumber-iOS/libPhoneNumber-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = libPhoneNumber_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A415EA42D50BE7760C3F4068DF13C101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478932B871D165E19F48FAD0D5EB8F8D /* JCDialPad.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JCDialPad/JCDialPad-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JCDialPad/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JCDialPad/JCDialPad.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JCDialPad;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0CDBB9C89C19B9086E68D16E86D2D29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718E3F977DF5071B88E0893AA6CE0CF5 /* libPhoneNumber-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/libPhoneNumber-iOS/libPhoneNumber-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/libPhoneNumber-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/libPhoneNumber-iOS/libPhoneNumber-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = libPhoneNumber_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7BDC533C11FE05C85FFFFDBFFD2CB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835DEDC91871E0E53FD1DE90ACB5633B /* Pods-phone-demo-swift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-phone-demo-swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-phone-demo-swift/Pods-phone-demo-swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_phone_demo_swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E216A868E55C80F48471A5C5889BE7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F671066BF60482EF3F4B8F472A6DC71 /* BWWalkthrough.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BWWalkthrough/BWWalkthrough-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BWWalkthrough/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BWWalkthrough/BWWalkthrough.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BWWalkthrough;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		FBD026898658E2D9D6C8D72480FCB4D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91BF8A823FC515F250BCEA164E2A0B46 /* BWWalkthrough.xcconfig */;
+			baseConfigurationReference = 9F671066BF60482EF3F4B8F472A6DC71 /* BWWalkthrough.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -734,8 +1186,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
-				673254EEAF0B5BF4596080C749645884 /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -749,11 +1201,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64F77574A855BB50F9FEB6F841CC7BD2 /* Build configuration list for PBXNativeTarget "Pods-phone-demo-swift" */ = {
+		954C00D703FD1FFA1B09D73095CF84D8 /* Build configuration list for PBXNativeTarget "JCDialPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1E623C839C32A7C7A0CBFF60D2618BC3 /* Debug */,
-				27B07C6E6C6ECCAC09B45660449650A0 /* Release */,
+				A415EA42D50BE7760C3F4068DF13C101 /* Debug */,
+				47B42F5FBE4DEDE99AF4FF1EE4B7798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7F16A1060ED16C24FC64EC4299E161D /* Build configuration list for PBXNativeTarget "Pods-phone-demo-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BDC533C11FE05C85FFFFDBFFD2CB04 /* Debug */,
+				046AAF476BDCE54C63E4DCA3A0F2B7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF2EEA151A3C31C4BB222E2515F5D6F /* Build configuration list for PBXNativeTarget "libPhoneNumber-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8380DA25C4C4602CC470FAE7414EA489 /* Debug */,
+				B0CDBB9C89C19B9086E68D16E86D2D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

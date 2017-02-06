@@ -151,6 +151,7 @@
 		C613345F1E3927EE004EFBE9 /* phone-demo-swift */ = {
 			isa = PBXGroup;
 			children = (
+				C6E0633F1E40FAB1005624DB /* Bridging-Header.h */,
 				C61334601E3927EE004EFBE9 /* AppDelegate.swift */,
 				C61334621E3927EE004EFBE9 /* ViewController.swift */,
 				C6E063111E40155E005624DB /* SignUpViewController.swift */,
@@ -162,7 +163,6 @@
 				C61334671E3927EE004EFBE9 /* Assets.xcassets */,
 				C61334691E3927EE004EFBE9 /* LaunchScreen.storyboard */,
 				C613346C1E3927EE004EFBE9 /* Info.plist */,
-				C6E0633F1E40FAB1005624DB /* Bridging-Header.h */,
 			);
 			path = "phone-demo-swift";
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briandaneshgar/Desktop/phone-demo-swift/phone-demo-swift/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briandaneshgar/Desktop/VOIP/phone-demo-swift/phone-demo-swift/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -546,7 +546,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briandaneshgar/Desktop/phone-demo-swift/phone-demo-swift/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/briandaneshgar/Desktop/VOIP/phone-demo-swift/phone-demo-swift/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

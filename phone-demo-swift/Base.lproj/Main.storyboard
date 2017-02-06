@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -240,7 +239,7 @@
             </objects>
             <point key="canvasLocation" x="2200.8000000000002" y="121.88905547226388"/>
         </scene>
-        <!--Item-->
+        <!--PHONE-->
         <scene sceneID="Eeg-WR-WuH">
             <objects>
                 <viewController id="NU1-yc-LDg" customClass="PhoneViewController" customModule="phone_demo_swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -271,26 +270,42 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eau-YA-bVr">
+                                <rect key="frame" x="51" y="172" width="273" height="48"/>
+                                <color key="backgroundColor" red="0.19303429990000001" green="0.55809085879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="vTU-cf-5Po"/>
+                                </constraints>
+                                <state key="normal" title="Contacts">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showContacts:" destination="NU1-yc-LDg" eventType="touchUpInside" id="IWZ-jX-bHm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="w5X-Uu-Iht" firstAttribute="leading" secondItem="xQe-uH-Jlz" secondAttribute="leadingMargin" constant="35" id="1vW-XZ-o4l"/>
                             <constraint firstAttribute="trailingMargin" secondItem="w5X-Uu-Iht" secondAttribute="trailing" constant="35" id="6km-MI-Wc9"/>
+                            <constraint firstItem="Eau-YA-bVr" firstAttribute="top" secondItem="w5X-Uu-Iht" secondAttribute="bottom" constant="8" id="7RN-nr-dpC"/>
                             <constraint firstItem="w5X-Uu-Iht" firstAttribute="centerX" secondItem="xQe-uH-Jlz" secondAttribute="centerX" id="Cgv-BX-A18"/>
                             <constraint firstItem="RuL-f9-vpm" firstAttribute="leading" secondItem="xQe-uH-Jlz" secondAttribute="leadingMargin" id="EqQ-Gu-J8x"/>
+                            <constraint firstItem="Eau-YA-bVr" firstAttribute="leading" secondItem="xQe-uH-Jlz" secondAttribute="leadingMargin" constant="35" id="IWv-JA-3he"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Eau-YA-bVr" secondAttribute="trailing" constant="35" id="Vrx-0J-eZX"/>
                             <constraint firstItem="RuL-f9-vpm" firstAttribute="centerX" secondItem="xQe-uH-Jlz" secondAttribute="centerX" id="XnU-kc-Zab"/>
                             <constraint firstItem="RuL-f9-vpm" firstAttribute="top" secondItem="cex-DG-PcE" secondAttribute="bottom" constant="8" id="iRW-XC-xWn"/>
                             <constraint firstItem="RuL-f9-vpm" firstAttribute="trailing" secondItem="xQe-uH-Jlz" secondAttribute="trailingMargin" id="maw-2E-mh3"/>
                             <constraint firstItem="w5X-Uu-Iht" firstAttribute="top" secondItem="RuL-f9-vpm" secondAttribute="bottom" constant="8" id="orx-7S-pQ5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BpY-eK-pxy"/>
+                    <tabBarItem key="tabBarItem" title="PHONE" id="BpY-eK-pxy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHn-Ar-0MZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1570" y="1023"/>
         </scene>
-        <!--Item 2-->
+        <!--PROFILE-->
         <scene sceneID="eYh-J8-Fek">
             <objects>
                 <viewController id="rQ7-2u-uQo" customClass="ProfileViewController" customModule="phone_demo_swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -322,7 +337,7 @@
                             <constraint firstItem="3CH-gt-AMP" firstAttribute="centerX" secondItem="FfJ-lB-FFK" secondAttribute="centerX" id="mDU-YS-Ycx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="E4P-FF-kwU"/>
+                    <tabBarItem key="tabBarItem" title="PROFILE" id="E4P-FF-kwU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzf-L0-R0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -345,7 +360,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aIg-JN-qYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="861.60000000000002" y="696.7016491754124"/>
+            <point key="canvasLocation" x="834" y="779"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gA2-FK-Cz7">
@@ -358,8 +373,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="NU1-yc-LDg" kind="relationship" relationship="viewControllers" id="ET3-Yo-YD5"/>
-                        <segue destination="rQ7-2u-uQo" kind="relationship" relationship="viewControllers" id="vt2-4C-3vF"/>
                         <segue destination="bhJ-KW-0Jw" kind="relationship" relationship="viewControllers" id="hZj-BE-sco"/>
+                        <segue destination="rQ7-2u-uQo" kind="relationship" relationship="viewControllers" id="vt2-4C-3vF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETj-98-5fG" userLabel="First Responder" sceneMemberID="firstResponder"/>

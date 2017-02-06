@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JCDialPad.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-phone-demo-swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>libPhoneNumber-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>57C9B8E0A3403763B9D4EFF992447936</key>
+		<key>88C2523B69DE1AD6D791628BE542D9C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9889562781163BF5CB84E06A985BCE44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BF539237882C886DCFB8D95ECF8490F3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CAC151665E6696B5AA34E15403598B17</key>
 		<dict>
 			<key>primary</key>
 			<true/>
