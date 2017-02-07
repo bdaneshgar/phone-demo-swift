@@ -72,6 +72,7 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
 
         var status = pjsua_start()
         
+        print("running")
         
         // HELP! Connecting to SIP server
         
