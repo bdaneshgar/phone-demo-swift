@@ -72,12 +72,21 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
 
         var status = pjsua_start()
         
+        
+        // HELP! Connecting to SIP server
+        
         var acc_id = pjsua_acc_id()
         var cfg = pjsua_acc_config()
 
         pjsua_acc_config_default(&cfg)
-        cfg.id = pj_str(UnsafeMutablePointer(mutating: "roam_vzw1@66.241.96.221"))
-        cfg.reg_uri = pj_str(UnsafeMutablePointer(mutating: "66.241.96.221"))
+        cfg.id = pj_str(UnsafeMutablePointer(mutating: "sip:roam_vzw1@66.241.96.221"))
+        cfg.reg_uri = pj_str(UnsafeMutablePointer(mutating: "sip:66.241.96.221"))
+        cfg.cred_count = 1
+        cfg.cred_info.0.username = pj_str(UnsafeMutablePointer(mutating:"roam_vzw1"))
+        cfg.cred_info.0.realm = pj_str(UnsafeMutablePointer(mutating: "66.241.96.221"))
+        cfg.cred_info.0.scheme = pj_str(UnsafeMutablePointer(mutating: "digest"))
+        cfg.cred_info.0.data_type = 0
+        cfg.cred_info.0.data = pj_str(UnsafeMutablePointer(mutating:"Gotmail123"))
         
         status = pjsua_acc_add(&cfg, pj_bool_t(PJ_TRUE.rawValue), &acc_id)
 
