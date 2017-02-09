@@ -10,10 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var emailField: UITextField!
+    
+    @IBOutlet var passwordField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+    }
+    @IBAction func loginAction(_ sender: Any) {
+        save()
+    }
+    
+    func save(){
+        UserDefaults.standard.set(emailField.text, forKey: "email")
     }
 
 }

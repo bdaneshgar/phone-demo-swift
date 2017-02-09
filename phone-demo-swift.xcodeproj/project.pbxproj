@@ -21,7 +21,7 @@
 		C6E0631A1E401E53005624DB /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E063191E401E53005624DB /* NumberViewController.swift */; };
 		C6E0632D1E4020A7005624DB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0632C1E4020A7005624DB /* AudioToolbox.framework */; };
 		C6E0632F1E4020AD005624DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0632E1E4020AD005624DB /* AVFoundation.framework */; };
-		C6E0633C1E40F603005624DB /* libpjsip-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E0633B1E40F5B5005624DB /* libpjsip-ios.a */; };
+		C6FB25321E4A986C00946550 /* ActiveCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FB25311E4A986C00946550 /* ActiveCallViewController.swift */; };
 		DB9BAB03D5A20BD3EEE37808 /* Pods_phone_demo_swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53BE96B7693F7968C591FFE /* Pods_phone_demo_swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,13 +39,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = C613345C1E3927EE004EFBE9;
 			remoteInfo = "phone-demo-swift";
-		};
-		C6E0633A1E40F5B5005624DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C6E063361E40F5B5005624DB /* pjsip-ios.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 22697EB81B034E2A00A15C4E;
-			remoteInfo = "pjsip-ios";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -72,8 +65,8 @@
 		C6E063191E401E53005624DB /* NumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		C6E0632C1E4020A7005624DB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C6E0632E1E4020AD005624DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C6E063361E40F5B5005624DB /* pjsip-ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "pjsip-ios.xcodeproj"; path = "PjSIP/pjsip-ios.xcodeproj"; sourceTree = "<group>"; };
 		C6E0633F1E40FAB1005624DB /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		C6FB25311E4A986C00946550 /* ActiveCallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveCallViewController.swift; sourceTree = "<group>"; };
 		E53BE96B7693F7968C591FFE /* Pods_phone_demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_phone_demo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E0633C1E40F603005624DB /* libpjsip-ios.a in Frameworks */,
 				C6E0632F1E4020AD005624DB /* AVFoundation.framework in Frameworks */,
 				C6E0632D1E4020A7005624DB /* AudioToolbox.framework in Frameworks */,
 				DB9BAB03D5A20BD3EEE37808 /* Pods_phone_demo_swift.framework in Frameworks */,
@@ -128,7 +120,6 @@
 		C61334541E3927EE004EFBE9 = {
 			isa = PBXGroup;
 			children = (
-				C6E063361E40F5B5005624DB /* pjsip-ios.xcodeproj */,
 				C613345F1E3927EE004EFBE9 /* phone-demo-swift */,
 				C61334741E3927EE004EFBE9 /* phone-demo-swiftTests */,
 				C613347F1E3927EE004EFBE9 /* phone-demo-swiftUITests */,
@@ -159,6 +150,7 @@
 				C6E063191E401E53005624DB /* NumberViewController.swift */,
 				C6E063151E401906005624DB /* PhoneViewController.swift */,
 				C6E063171E401AE3005624DB /* ProfileViewController.swift */,
+				C6FB25311E4A986C00946550 /* ActiveCallViewController.swift */,
 				C61334641E3927EE004EFBE9 /* Main.storyboard */,
 				C61334671E3927EE004EFBE9 /* Assets.xcassets */,
 				C61334691E3927EE004EFBE9 /* LaunchScreen.storyboard */,
@@ -183,14 +175,6 @@
 				C61334821E3927EE004EFBE9 /* Info.plist */,
 			);
 			path = "phone-demo-swiftUITests";
-			sourceTree = "<group>";
-		};
-		C6E063371E40F5B5005624DB /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C6E0633B1E40F5B5005624DB /* libpjsip-ios.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +274,6 @@
 			mainGroup = C61334541E3927EE004EFBE9;
 			productRefGroup = C613345E1E3927EE004EFBE9 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C6E063371E40F5B5005624DB /* Products */;
-					ProjectRef = C6E063361E40F5B5005624DB /* pjsip-ios.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C613345C1E3927EE004EFBE9 /* phone-demo-swift */,
@@ -304,16 +282,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C6E0633B1E40F5B5005624DB /* libpjsip-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libpjsip-ios.a";
-			remoteRef = C6E0633A1E40F5B5005624DB /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C613345B1E3927EE004EFBE9 /* Resources */ = {
@@ -395,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6FB25321E4A986C00946550 /* ActiveCallViewController.swift in Sources */,
 				C6E063181E401AE3005624DB /* ProfileViewController.swift in Sources */,
 				C6E063121E40155E005624DB /* SignUpViewController.swift in Sources */,
 				C6E063161E401906005624DB /* PhoneViewController.swift in Sources */,
