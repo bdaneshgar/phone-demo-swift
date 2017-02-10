@@ -38,6 +38,10 @@ class ActiveCallViewController: UIViewController {
         
         speakerBtn.layer.borderWidth = 1
         speakerBtn.layer.borderColor = UIColor.white.cgColor
+        
+        muteBtn.isHidden = true
+        keypadBtn.isHidden = true
+        speakerBtn.isHidden = true
 
         UIDevice.current.isProximityMonitoringEnabled = true
     }

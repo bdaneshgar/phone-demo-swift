@@ -9,6 +9,8 @@
 import UIKit
 import Contacts
 import ContactsUI
+import AudioToolbox
+
 
 protocol ContactDelegate {
     func didFetchContacts(_ contacts: [CNContact])
@@ -18,8 +20,12 @@ protocol ContactDelegate {
 class PhoneViewController: UIViewController, CNContactPickerDelegate {
     @IBOutlet var numberField: UITextField!
     
+    @IBOutlet var delete: UIButton!
     @IBOutlet var profile: UIButton!
+    
+    var isOnCall = false
     @IBOutlet var callBtn: UIButton!
+    @IBOutlet var callImage: UIButton!
 
     @IBOutlet var one: UIButton!
     @IBOutlet var two: UIButton!
@@ -34,6 +40,7 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
     @IBOutlet var asterisk: UIButton!
     @IBOutlet var hashtag: UIButton!
     
+    @IBOutlet var contacts: UIButton!
     
     
     
@@ -53,49 +60,133 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
     }
     
     @IBAction func deleteAction(_ sender: Any) {
-        numberField.text = ""
+//        numberField.text = ""
+        if(numberField.text != "" ){
+            let endIndex = numberField.text?.index((numberField.text?.endIndex)!, offsetBy: -1)
+            let truncated = numberField.text?.substring(to: endIndex!)
+            numberField.text = truncated
+        }
+    }
+    
+    func call(){
+        if(isOnCall){
+            isOnCall = false
+            numberField.text = ""
+            profile.isHidden = false
+            delete.isHidden = false
+            contacts.isHidden = false
+            
+            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { () -> Void in
+                self.callBtn.backgroundColor = UIColor(colorLiteralRed: 86.0/255.0, green: 255.0/255.0, blue: 80.0/255.0, alpha: 1.0)
+                let angle =  CGFloat(0)
+                let tr = CGAffineTransform.identity.rotated(by: angle)
+                self.callImage.transform = tr
+            }) {(Bool) -> Void in
+            }
+        } else{
+            isOnCall = true
+            profile.isHidden = true
+            delete.isHidden = true
+            contacts.isHidden = true
+            
+            UIView.animate(withDuration: 0.5, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { () -> Void in
+                self.callBtn.backgroundColor = UIColor(colorLiteralRed: 255.0/255.0, green: 98.0/255.0, blue: 89.0/255.0, alpha: 1.0)
+                let angle =  CGFloat(M_PI_2 + M_PI_2/2)
+                let tr = CGAffineTransform.identity.rotated(by: angle)
+                self.callImage.transform = tr
+            }) {(Bool) -> Void in
+            }
+            
+        }
+    }
+    
+    @IBAction func callBtnAction(_ sender: Any) {
+        call()
+    }
+    @IBAction func callImageAction(_ sender: Any) {
+        call()
+    }
+
+    func animate(sender: UIButton){
+        let red   = Float((arc4random() % 256)) / 255.0
+        let green = Float((arc4random() % 256)) / 255.0
+        let blue  = Float((arc4random() % 256)) / 255.0
+        let alpha = Float(0.5)
+        
+        UIView.animate(withDuration: 0.05, delay: 0, options: [UIViewAnimationOptions.allowUserInteraction, .autoreverse], animations: { () -> Void in
+            sender.backgroundColor = UIColor(colorLiteralRed: red, green: green, blue: blue, alpha: alpha)
+        }) {(Bool) -> Void in
+            sender.backgroundColor = UIColor.clear
+        }
     }
     
     @IBAction func oneAction(_ sender: Any) {
         numberField.text = numberField.text! + "1"
+        AudioServicesPlaySystemSound(1201)
+        
+        animate(sender: sender as! UIButton)
+        
     }
     
     @IBAction func twoAction(_ sender: Any) {
         numberField.text = numberField.text! + "2"
+        AudioServicesPlaySystemSound(1202)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func threeAction(_ sender: Any) {
         numberField.text = numberField.text! + "3"
+        AudioServicesPlaySystemSound(1203)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func fourAction(_ sender: Any) {
         numberField.text = numberField.text! + "4"
+        AudioServicesPlaySystemSound(1204)
+        animate(sender: sender as! UIButton)
     }
-    
     @IBAction func fiveAction(_ sender: Any) {
         numberField.text = numberField.text! + "5"
+        AudioServicesPlaySystemSound(1205)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func sixAction(_ sender: Any) {
         numberField.text = numberField.text! + "6"
+        AudioServicesPlaySystemSound(1206)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func sevenAction(_ sender: Any) {
         numberField.text = numberField.text! + "7"
+        AudioServicesPlaySystemSound(1207)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func eightAction(_ sender: Any) {
         numberField.text = numberField.text! + "8"
+        AudioServicesPlaySystemSound(1208)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func nineAction(_ sender: Any) {
         numberField.text = numberField.text! + "9"
+        AudioServicesPlaySystemSound(1209)
+        animate(sender: sender as! UIButton)
     }
     @IBAction func zeroAction(_ sender: Any) {
         numberField.text = numberField.text! + "0"
+        AudioServicesPlaySystemSound(1200)
+        animate(sender: sender as! UIButton)
     }
+    @IBAction func asteriskAction(_ sender: Any) {
+        numberField.text = numberField.text! + "*"
+        animate(sender: sender as! UIButton)
+    }
+    @IBAction func hashtagAction(_ sender: Any) {
+        numberField.text = numberField.text! + "#"
+        animate(sender: sender as! UIButton)
+    }
+    
     @IBAction func profileAction(_ sender: Any) {
         
     }
     
-    
-    
     func setup(){
-        
         
         callBtn.layer.cornerRadius = 0.5 * callBtn.bounds.size.width
         
@@ -170,8 +261,6 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
         hashtag.layer.borderWidth = 1
         hashtag.layer.borderColor = UIColor.black.cgColor
         self.view.bringSubview(toFront: hashtag)
-        
-
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -236,32 +325,34 @@ class PhoneViewController: UIViewController, CNContactPickerDelegate {
 //        TCP
 //        pjsua_transport_create(PJSIP_TRANSPORT_TCP, &transportConfig, nil)
 
+        /* Initialization is done, now start pjsua */
         status = pjsua_start()
         print("status: \(status)")
         print("running")
         
         /* Register to SIP server by creating SIP account. */
         
-//        var acc_id = pjsua_acc_id()
-//        var cfg = pjsua_acc_config()
-//        
-//        let SIP_USER = "roam_vzw1"
-//        let SIP_PASSWD = "Gotmail123"
-//        let SIP_DOMAIN = "66.241.96.221"
-//
-//        pjsua_acc_config_default(&cfg)
-//        cfg.id = pj_str(UnsafeMutablePointer(mutating: "sip:" + SIP_USER + "@" + SIP_DOMAIN))
-//        cfg.reg_uri = pj_str(UnsafeMutablePointer(mutating: "sip:" + SIP_DOMAIN))
-//        cfg.cred_count = 1
-//        cfg.cred_info.0.realm = pj_str(UnsafeMutablePointer(mutating: SIP_DOMAIN))
-//        cfg.cred_info.0.scheme = pj_str(UnsafeMutablePointer(mutating: "digest")) //?
-//        cfg.cred_info.0.username = pj_str(UnsafeMutablePointer(mutating:SIP_USER))
-//        cfg.cred_info.0.data_type = Int32(PJSIP_CRED_DATA_PLAIN_PASSWD.rawValue)
-//        cfg.cred_info.0.data = pj_str(UnsafeMutablePointer(mutating:SIP_PASSWD))
-//
-//        status = pjsua_acc_add(&cfg, pj_bool_t(PJ_TRUE.rawValue), &acc_id)
-//
-//        print("status: \(status)")
+        var acc_id = pjsua_acc_id()
+        var cfg = pjsua_acc_config()
+        
+        let SIP_USER = "roam_vzw1"
+        let SIP_PASSWD = "Gotmail123"
+        let SIP_DOMAIN = "66.241.96.221"
+        //DID: (206)260-3561
+
+        pjsua_acc_config_default(&cfg)
+        cfg.id = pj_str(UnsafeMutablePointer(mutating: "sip:" + SIP_USER + "@" + SIP_DOMAIN))
+        cfg.reg_uri = pj_str(UnsafeMutablePointer(mutating: "sip:" + SIP_DOMAIN))
+        cfg.cred_count = 1
+        cfg.cred_info.0.realm = pj_str(UnsafeMutablePointer(mutating: SIP_DOMAIN))
+        cfg.cred_info.0.scheme = pj_str(UnsafeMutablePointer(mutating: "vitality")) //?
+        cfg.cred_info.0.username = pj_str(UnsafeMutablePointer(mutating:SIP_USER))
+        cfg.cred_info.0.data_type = Int32(PJSIP_CRED_DATA_PLAIN_PASSWD.rawValue)
+        cfg.cred_info.0.data = pj_str(UnsafeMutablePointer(mutating:SIP_PASSWD))
+
+        status = pjsua_acc_add(&cfg, pj_bool_t(PJ_TRUE.rawValue), &acc_id)
+
+        print("status: \(status)")
         
     }
 }
