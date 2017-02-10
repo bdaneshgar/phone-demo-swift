@@ -951,13 +951,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3CH-gt-AMP">
-                                <rect key="frame" x="147.5" y="293.5" width="80" height="80"/>
+                                <rect key="frame" x="147" y="567" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="I27-1Q-UB3"/>
                                     <constraint firstAttribute="width" constant="80" id="vnY-bY-gjH"/>
                                 </constraints>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.19303429990000001" green="0.55809085879999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logOut:" destination="rQ7-2u-uQo" eventType="touchUpInside" id="Yvo-mc-y0z"/>
@@ -970,16 +970,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xwH-cy-Hpo">
+                                <rect key="frame" x="0.0" y="343" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="hgs-2L-84H"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3CH-gt-AMP" firstAttribute="centerY" secondItem="FfJ-lB-FFK" secondAttribute="centerY" id="Rja-1T-rRb"/>
+                            <constraint firstAttribute="trailing" secondItem="xwH-cy-Hpo" secondAttribute="trailing" id="9u7-0V-mEC"/>
+                            <constraint firstItem="3CH-gt-AMP" firstAttribute="top" secondItem="xwH-cy-Hpo" secondAttribute="bottom" constant="8" id="B1M-Ki-qDJ"/>
+                            <constraint firstItem="xwH-cy-Hpo" firstAttribute="leading" secondItem="FfJ-lB-FFK" secondAttribute="leading" id="NlK-p3-tQV"/>
+                            <constraint firstItem="i7u-lO-OgF" firstAttribute="top" secondItem="3CH-gt-AMP" secondAttribute="bottom" constant="20" id="aBc-sA-iNd"/>
                             <constraint firstItem="3CH-gt-AMP" firstAttribute="centerX" secondItem="FfJ-lB-FFK" secondAttribute="centerX" id="mDU-YS-Ycx"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" id="E4P-FF-kwU"/>
                     <connections>
                         <outlet property="emailLabel" destination="sKb-YQ-mYe" id="rtw-aT-fAL"/>
+                        <outlet property="numbers" destination="xwH-cy-Hpo" id="OlW-E7-Fao"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzf-L0-R0F" userLabel="First Responder" sceneMemberID="firstResponder"/>

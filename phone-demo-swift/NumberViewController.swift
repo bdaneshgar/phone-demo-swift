@@ -21,6 +21,13 @@ class NumberViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         self.picker.delegate = self
         self.picker.dataSource = self
         pickerData = ["phone number 1", "phone number 2", "phone number 3", "phone number 4"]
+
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+        UserDefaults.standard.set(row, forKey: "number")
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int{        return 1
