@@ -22,7 +22,7 @@ class SignUpViewController: UIViewController {
     @IBAction func signUpAction(_ sender: Any) {
         save()
     }
-    
+
     func save(){
         UserDefaults.standard.set(emailField.text, forKey: "email")
     }

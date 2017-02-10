@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
     @IBOutlet var emailLabel: UILabel!
     
+    @IBOutlet var numberLabel: UILabel!
     @IBOutlet var numbers: UIPickerView!
     
     var pickerData: [String] = [String]()
@@ -29,7 +30,8 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
 
         
         emailLabel.text = UserDefaults.standard.string(forKey: "email")
-
+        numberLabel.text = pickerData[UserDefaults.standard.integer(forKey: "number")]
+        
         // Do any additional setup after loading the view.
         
         numbers.selectRow(UserDefaults.standard.integer(forKey: "number"), inComponent: 0, animated: true)
@@ -39,6 +41,7 @@ class ProfileViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
     {
         UserDefaults.standard.set(row, forKey: "number")
+        numberLabel.text = pickerData[row]
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int{        return 1
